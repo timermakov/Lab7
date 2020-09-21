@@ -1,38 +1,56 @@
 class FirstLab {
+    static final int G_SIZE = 16;
+    static final int X_SIZE = 20;
+    static final int K_ROWS_SIZE = G_SIZE;
+    static final int K_COLUMNS_SIZE = X_SIZE;
 
-    public static void main(String[] args) {
-        // одномерный массив d типа short, содержащий числа
-        // от 2 до 17 включительно в порядке убывания
-        short[] g = new short[16];
-        for(short i = 15; i >= 0; i--) {
+    static short[] g = new short[G_SIZE];
+    static float[] x = new float[X_SIZE];
+    static double[][] k = new double[K_ROWS_SIZE][K_COLUMNS_SIZE];
+
+    // заполняет одномерный массив d типа short, содержащий числа
+    // от 2 до 17 включительно в порядке убывания
+    public static void make_g_array() {
+        for(short i = G_SIZE-1; i >= 0; i--) {
             g[i] = (short) (i+2);
         }
+    }
 
-        // одномерный массив x типа float, содержащий
-        // 20 случайных числел в диапазоне от -6.0 до 3.0
-        float[] x = new float[20];
-        for(int i = 0; i < 20; i++) {
-            x[i] = (float) (-6 + Math.random()*9);
+    // заполняет одномерный массив x типа float, содержащий
+    // 20 случайных числел в диапазоне от -6.0 до 3.0
+    public static void make_x_array() {
+        for(int i = 0; i < X_SIZE; i++) {
+            x[i] = (float) (-6 + Math.random()*9); // случайные дробные числа от -6 до 3
         }
+    }
 
-        // двумерный массив d размером 16x20, содержащий
-        // ряды чисел, посчитанных по трём формулам
-        double[][] k = new double[16][20];
-        for (int i = 0; i < 16; i++) {
-            for (int j = 0; j < 20; j++) {
+    // заполняет двумерный массив d размером 16x20, содержащий
+    // ряды чисел, посчитанных по трём формулам
+    public static void make_k_array() {
+        for (int i = 0; i < K_ROWS_SIZE; i++) {
+            for (int j = 0; j < K_COLUMNS_SIZE; j++) {
                 if (i==13) k[i][j]=Math.pow(Math.E, Math.asin((x[j]-1.5)/9.0));
                 else if (i==2 || i==4 || i==8 || i==9 || i==10 || i==11 || i==12 || i==14)
                     k[i][j] = Math.cbrt(Math.pow(Math.cbrt(x[j]),3));
                 else k[i][j] = Math.tan(Math.log(Math.pow(Math.tan(Math.sin(Math.pow(Math.E,x[j]))),2)));
             }
         }
+    }
 
+    public static void print_k_array() {
         // вывод массива в формате с 3 знаками после запятой
-        for (int i = 0; i < 16; i++) {
-            for (int j = 0; j < 20; j++) {
+        for (int i = 0; i < K_ROWS_SIZE; i++) {
+            for (int j = 0; j < K_COLUMNS_SIZE; j++) {
                 System.out.printf("%8.3f", k[i][j]);
             }
             System.out.println();
         }
+    }
+    public static void main(String[] args) {
+        make_g_array();
+        make_x_array();
+        make_k_array();
+        print_k_array();
+
     }
 }
