@@ -8,9 +8,10 @@ class FirstLab {
     static float[] x = new float[X_SIZE];
     static double[][] k = new double[K_ROWS_SIZE][K_COLUMNS_SIZE];
 
+
     // заполняет одномерный массив d типа short числами
     // от 2 до 17 включительно в порядке убывания
-    public static void make_g_array() {
+    public static void makeGArray() {
         for(short i = G_SIZE-1; i >= 0; i--) {
             g[i] = (short) (i+2);
         }
@@ -18,15 +19,25 @@ class FirstLab {
 
     // заполняет одномерный массив x типа float
     // 20 случайными числами в диапазоне от -6.0 до 3.0
-    public static void make_x_array() {
+    public static void makeXArray() {
         for(int i = 0; i < X_SIZE; i++) {
-            x[i] = (float) (-6 + Math.random()*9); // случайные дробные числа от -6 до 3
+            x[i] = makeRandomNumber(); // случайные дробные числа от -6 до 3
         }
+    }
+
+    private static float makeRandomNumber() {
+        int min = -6;
+        int max = 9;
+        return makeRandomFromMinToMax(min, max);
+    }
+
+    private static float makeRandomFromMinToMax(int min, int max) {
+        return (float) (min + Math.random() * max);
     }
 
     // заполняет двумерный массив d размером 16x20
     // рядами чисел, посчитанными по трём данным формулам
-    public static void make_k_array() {
+    public static void makeKArray() {
         for (int i = 0; i < K_ROWS_SIZE; i++) {
             for (int j = 0; j < K_COLUMNS_SIZE; j++) {
                 if (i==13) k[i][j]=Math.pow(Math.E, Math.asin((x[j]-1.5)/9.0));
@@ -38,7 +49,7 @@ class FirstLab {
     }
 
     // вывод массива в формате с 3 знаками после запятой
-    public static void print_k_array() {
+    public static void printKArray() {
         for (int i = 0; i < K_ROWS_SIZE; i++) {
             for (int j = 0; j < K_COLUMNS_SIZE; j++) {
                 System.out.printf("%8.3f", k[i][j]);
@@ -49,10 +60,9 @@ class FirstLab {
 
     // main, запускающий методы
     public static void main(String[] args) {
-        make_g_array();
-        make_x_array();
-        make_k_array();
-        print_k_array();
-
+        makeGArray();
+        makeXArray();
+        makeKArray();
+        printKArray();
     }
 }
