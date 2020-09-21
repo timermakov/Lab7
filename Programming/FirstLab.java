@@ -8,7 +8,7 @@ class FirstLab {
     static float[] x = new float[X_SIZE];
     static double[][] k = new double[K_ROWS_SIZE][K_COLUMNS_SIZE];
 
-    // заполняет одномерный массив d типа short, содержащий числа
+    // заполняет одномерный массив d типа short числами
     // от 2 до 17 включительно в порядке убывания
     public static void make_g_array() {
         for(short i = G_SIZE-1; i >= 0; i--) {
@@ -16,16 +16,16 @@ class FirstLab {
         }
     }
 
-    // заполняет одномерный массив x типа float, содержащий
-    // 20 случайных числел в диапазоне от -6.0 до 3.0
+    // заполняет одномерный массив x типа float
+    // 20 случайными числами в диапазоне от -6.0 до 3.0
     public static void make_x_array() {
         for(int i = 0; i < X_SIZE; i++) {
             x[i] = (float) (-6 + Math.random()*9); // случайные дробные числа от -6 до 3
         }
     }
 
-    // заполняет двумерный массив d размером 16x20, содержащий
-    // ряды чисел, посчитанных по трём формулам
+    // заполняет двумерный массив d размером 16x20
+    // рядами чисел, посчитанными по трём данным формулам
     public static void make_k_array() {
         for (int i = 0; i < K_ROWS_SIZE; i++) {
             for (int j = 0; j < K_COLUMNS_SIZE; j++) {
@@ -37,8 +37,8 @@ class FirstLab {
         }
     }
 
+    // вывод массива в формате с 3 знаками после запятой
     public static void print_k_array() {
-        // вывод массива в формате с 3 знаками после запятой
         for (int i = 0; i < K_ROWS_SIZE; i++) {
             for (int j = 0; j < K_COLUMNS_SIZE; j++) {
                 System.out.printf("%8.3f", k[i][j]);
@@ -46,6 +46,8 @@ class FirstLab {
             System.out.println();
         }
     }
+
+    // main, запускающий методы
     public static void main(String[] args) {
         make_g_array();
         make_x_array();
