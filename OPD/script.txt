@@ -1,0 +1,139 @@
+#!/bin/sh
+mkdir lab0
+cd lab0
+echo "Коды  Iron Defense Iron Head Zen Headbutt" > beldum3
+{
+echo "Живет"
+echo "Cave Mountain"
+} > larvitar1
+mkdir pignite1
+cd pignite1
+{
+echo "Возможности  Overland=8 Surface=6 Jump=4"
+echo "Power=4 Intelligence=4 Aura=0"
+} > lucario
+{
+echo "Развитые способности  Sand"
+echo "Veil"
+} > geodude
+mkdir gorebyss
+mkdir sudowoodo
+cd ..
+echo "satk=7 sdef=7 spd=4" > quagsire7
+mkdir rhydon3
+cd rhydon3
+{
+echo "Возможности  Overland=1"
+echo "Sky=8 Jump=3 Power=3 Intelligence=4 Sinker=0"
+} > claydol
+{
+echo "Ходы  Bug Bite"
+echo "Electroweb Snore String Shot"
+} > burmy
+mkdir rhydon
+{
+echo "satk=12 sdef=10"
+echo "spd=10"
+} > jynx
+cd ..
+mkdir tranquill3
+cd tranquill3
+echo "satk=4 sdef=4 spd=6" > pichu
+mkdir infernape
+{
+echo "Живет"
+echo "Ocean"
+} > gorebyss
+mkdir swadloon
+{
+echo "Возможности  Overland=8 Surface=6 Burrow=4 Jump=1"
+echo "Power=3 Intelligence=4 Sprouter=0 Stealth=0"
+} > servine
+mkdir bellossom
+cd ..
+
+chmod 600 beldum3
+chmod 044 larvitar1
+chmod 570 pignite1
+cd pignite1
+chmod 400 lucario
+chmod 620 geodude
+chmod 335 gorebyss
+chmod 533 sudowoodo
+cd ..
+chmod 620 quagsire7
+chmod 317 rhydon3
+cd rhydon3
+chmod 404 claydol
+chmod 620 burmy
+chmod 511 rhydon
+chmod 004 jynx
+cd ..
+chmod 576 tranquill3
+cd tranquill3
+chmod 660 pichu
+chmod 551 infernape
+chmod 044 gorebyss
+chmod 550 swadloon
+chmod 064 servine
+chmod 357 bellossom
+cd ..
+
+
+chmod u+w rhydon3/rhydon
+chmod -R u+rwx pignite1
+cp -R pignite1 rhydon3/rhydon
+chmod 570 pignite1
+cd pignite1
+chmod 400 lucario
+chmod 620 geodude
+chmod 335 gorebyss
+chmod 533 sudowoodo
+cd ../rhydon3/rhydon
+chmod 570 pignite1
+cd pignite1
+chmod 400 lucario
+chmod 620 geodude
+chmod 335 gorebyss
+chmod 533 sudowoodo
+cd ../../..
+chmod u-w rhydon3/rhydon
+
+chmod u+w tranquill3/infernape
+cp beldum3 tranquill3/infernape
+chmod u-w tranquill3/infernape
+
+ln -s pignite1 Copy_3
+
+chmod u+w tranquill3
+ln quagsire7 tranquill3/gorebyssquagsire
+chmod u-w tranquill3
+
+chmod u+w pignite1
+ln -s ~/lab0/quagsire7 ~/lab0/pignite1/geodudequagsire
+chmod u-w pignite1
+
+cat rhydon3/claydol pignite1/lucario > beldum3_13
+
+chmod u+w tranquill3
+cp quagsire7 tranquill3/pichuquagsire
+chmod u-w tranquill3
+
+wc -c pignite1/lucario pignite1/geodude rhydon3/claydol rhydon3/burmy
+ls -R pignite1 | sort -r
+cat **/b* 2>> /dev/null | sort -r
+(cat -n pignite1/geodude rhydon3/claydol rhydon3/burmy rhydon/jynx tranquill3/pichu tranquill3/gorebyss | grep -iv "we") 2>&1
+(ls -lRt | tail -2) 2>&1
+wc -l grep "l*" 2> /dev/null 
+
+rm -f larvitar1
+rm -f pignite1/lucario
+rm -f pignite1/geodudequagsi*
+rm -f tranquill3/gorebyssquagsi*
+chmod -R 777 pignite1
+rm -rf pignite1
+chmod -R 777 tranquill3/infernape
+rm -rf tranquill3/infernape
+
+
+

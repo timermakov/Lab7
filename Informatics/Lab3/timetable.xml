@@ -1,0 +1,36 @@
+<Timetable>
+	<Day>Вторник
+		<Lesson>
+			<Time>10:00-11:30</Time>
+			<Week></Week>
+			<Subject>МАТЕМАТИКА (БАЗОВЫЙ УРОВЕНЬ)(ПРАК)</Subject>
+			<Teacher>Назаров Равшанжон</Teacher>
+			<Build>Кронверкский пр., д.49, лит.А</Build>
+			<Room>427</Room>
+		</Lesson>
+		<Lesson>
+			<Time>13:30-15:00</Time>
+			<Week>четная неделя</Week>
+			<Subject>ФИЗИКА(ЛАБ)</Subject>
+			<Teacher>Коробков Максим Петрович</Teacher>
+			<Build>Биржевая линия, д.16, лит.А</Build>
+			<Room>545</Room>
+		</Lesson>
+        <Lesson>
+			<Time>13:30-15:00</Time>
+			<Week>нечетная неделя</Week>
+			<Subject>ФИЗИКА(ЛАБ)</Subject>
+			<Teacher>Коробков Максим Петрович</Teacher>
+			<Build>Биржевая линия, д.16, лит.А</Build>
+			<Room>545</Room>
+		</Lesson>
+        <Lesson>
+			<Time>15:20-16:50</Time>
+			<Week></Week>
+			<Subject>ФИЗИКА(ЛЕК)</Subject>
+			<Teacher>Смирнов Александр Витальевич</Teacher>
+			<Build>Биржевая линия, д.16, лит.А</Build>
+			<Room>550</Room>
+		</Lesson>   
+	</Day>
+</Timetable>
