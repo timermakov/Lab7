@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="543.0" y="640.701171875">com</node>
+    <node x="570.0" y="565.701171875">netscape</node>
+    <node x="401.0" y="100.0">DefenseCurl</node>
+    <node x="529.1641414141413" y="0.0">Facade</node>
+    <node x="0.0" y="715.701171875">ru</node>
+    <node x="0.0" y="565.701171875">toolbarButtonGraphics</node>
+    <node x="708.0" y="640.701171875">sun</node>
+    <node x="891.8333333333334" y="270.0">Ariados</node>
+    <node x="568.6666666666667" y="360.0">Battleground</node>
+    <node x="309.0" y="565.701171875">groovyjarjarasm</node>
+    <node x="398.66414141414134" y="0.0">Rest</node>
+    <node x="370.0" y="640.701171875">java</node>
+    <node x="587.25" y="100.0">Cleffa</node>
+    <node x="189.0" y="640.701171875">javax</node>
+    <node x="1093.75" y="180.0">SmartStrike</node>
+    <node x="265.0" y="180.0">Swagger</node>
+    <node x="694.0" y="435.0">groovyjarjarpicocli</node>
+    <node x="830.0" y="180.0">Spinarak</node>
+    <node x="999.25" y="100.0">XScissor</node>
+    <node x="980.0" y="565.701171875">images</node>
+    <node x="873.0" y="640.701171875">org</node>
+    <node x="859.25" y="100.0">ScaryFace</node>
+    <node x="125.0" y="180.0">WillOWisp</node>
+    <node x="703.25" y="100.0">CrossPoison</node>
+    <node x="520.75" y="180.0">Clefairy</node>
+    <node x="93.75" y="270.0">Giratina</node>
+    <node x="1038.0" y="640.701171875">jdk</node>
+    <node x="775.0" y="565.701171875">META-INF</node>
+    <node x="368.0186868686868" y="270.0">Clefable</node>
+    <node x="0.0" y="180.0">Psychic</node>
+    <node x="0.0" y="640.701171875">groovy</node>
+    <node x="347.0" y="448.201171875">groovyjarjarcommonscli</node>
+    <node x="40.0" y="450.701171875">groovyjarjarantlr</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Clefairy" target="Rest">
+      <point x="-22.399999999999977" y="-15.0" />
+      <point x="554.35" y="160.0" />
+      <point x="547.5" y="160.0" />
+      <point x="547.5" y="70.0" />
+      <point x="448.66414141414134" y="70.0" />
+      <point x="10.0" y="15.0" />
+    </edge>
+    <edge source="Giratina" target="Psychic">
+      <point x="-42.0" y="-15.0" />
+      <point x="107.75" y="250.0" />
+      <point x="52.0" y="250.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Giratina" target="Swagger">
+      <point x="42.0" y="-15.0" />
+      <point x="191.75" y="250.0" />
+      <point x="291.0" y="250.0" />
+      <point x="-26.0" y="15.0" />
+    </edge>
+    <edge source="Clefable" target="Rest">
+      <point x="-28.0" y="-15.0" />
+      <point x="396.0186868686868" y="240.0" />
+      <point x="379.5" y="240.0" />
+      <point x="379.5" y="70.0" />
+      <point x="428.66414141414134" y="70.0" />
+      <point x="-10.0" y="15.0" />
+    </edge>
+    <edge source="Ariados" target="SmartStrike">
+      <point x="43.33333333333337" y="-15.0" />
+      <point x="987.1666666666667" y="250.0" />
+      <point x="1161.75" y="250.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Clefairy" target="Facade">
+      <point x="0.0" y="-15.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Battleground" target="Cleffa">
+      <point x="12.0" y="-15.0" />
+      <point x="652.6666666666667" y="320.0" />
+      <point x="671.9686868686869" y="320.0" />
+      <point x="671.9686868686869" y="160.0" />
+      <point x="667.25" y="160.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+    <edge source="Clefable" target="Clefairy">
+      <point x="46.666666666666686" y="-15.0" />
+      <point x="470.68535353535356" y="250.0" />
+      <point x="576.75" y="250.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Clefable" target="DefenseCurl">
+      <point x="9.333333333333314" y="-15.0" />
+      <point x="433.3520202020202" y="250.0" />
+      <point x="435.0" y="250.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="Ariados" target="Spinarak">
+      <point x="-8.666666666666629" y="-15.0" />
+      <point x="935.1666666666667" y="250.0" />
+      <point x="923.3333333333333" y="250.0" />
+      <point x="37.33333333333326" y="15.0" />
+    </edge>
+    <edge source="groovyjarjarcommonscli" target="groovyjarjarcommonscli">
+      <point x="68.0" y="15.0" />
+      <point x="551.0" y="508.201171875" />
+      <point x="317.0" y="508.201171875" />
+      <point x="317.0" y="455.701171875" />
+      <point x="-136.0" y="-7.5" />
+    </edge>
+    <edge source="Ariados" target="XScissor">
+      <point x="26.0" y="-15.0" />
+      <point x="969.8333333333334" y="240.0" />
+      <point x="1083.25" y="240.0" />
+      <point x="28.0" y="15.0" />
+    </edge>
+    <edge source="Spinarak" target="XScissor">
+      <point x="37.33333333333326" y="-15.0" />
+      <point x="923.3333333333333" y="160.0" />
+      <point x="1027.25" y="160.0" />
+      <point x="-28.0" y="15.0" />
+    </edge>
+    <edge source="Cleffa" target="Rest">
+      <point x="-24.0" y="-15.0" />
+      <point x="611.25" y="60.0" />
+      <point x="468.66414141414134" y="60.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="Battleground" target="Clefable">
+      <point x="-36.0" y="-15.0" />
+      <point x="604.6666666666667" y="330.0" />
+      <point x="424.0186868686868" y="330.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Battleground" target="Ariados">
+      <point x="60.0" y="-15.0" />
+      <point x="700.6666666666667" y="340.0" />
+      <point x="943.8333333333334" y="340.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Giratina" target="Rest">
+      <point x="-14.0" y="-15.0" />
+      <point x="135.75" y="250.0" />
+      <point x="114.5" y="250.0" />
+      <point x="114.5" y="60.0" />
+      <point x="408.66414141414134" y="60.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="Clefairy" target="Cleffa">
+      <point x="44.799999999999955" y="-15.0" />
+      <point x="621.55" y="160.0" />
+      <point x="635.25" y="160.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="groovyjarjarantlr" target="groovyjarjarantlr">
+      <point x="77.33333333333331" y="15.0" />
+      <point x="233.33333333333331" y="520.701171875" />
+      <point x="0.0" y="520.701171875" />
+      <point x="0.0" y="455.701171875" />
+      <point x="-116.0" y="-10.0" />
+    </edge>
+    <edge source="Battleground" target="Spinarak">
+      <point x="36.0" y="-15.0" />
+      <point x="676.6666666666667" y="330.0" />
+      <point x="848.6666666666666" y="330.0" />
+      <point x="-37.33333333333337" y="15.0" />
+    </edge>
+    <edge source="Spinarak" target="CrossPoison">
+      <point x="-37.33333333333337" y="-15.0" />
+      <point x="848.6666666666666" y="160.0" />
+      <point x="805.25" y="160.0" />
+      <point x="34.0" y="15.0" />
+    </edge>
+    <edge source="Clefable" target="Swagger">
+      <point x="-46.666666666666686" y="-15.0" />
+      <point x="377.3520202020202" y="250.0" />
+      <point x="343.0" y="250.0" />
+      <point x="26.0" y="15.0" />
+    </edge>
+    <edge source="groovyjarjarpicocli" target="groovyjarjarpicocli">
+      <point x="62.0" y="15.0" />
+      <point x="880.0" y="495.0" />
+      <point x="664.0" y="495.0" />
+      <point x="664.0" y="442.5" />
+      <point x="-124.0" y="-7.5" />
+    </edge>
+    <edge source="Spinarak" target="ScaryFace">
+      <point x="0.0" y="-15.0" />
+      <point x="886.0" y="160.0" />
+      <point x="889.25" y="160.0" />
+      <point x="-30.0" y="15.0" />
+    </edge>
+    <edge source="Ariados" target="ScaryFace">
+      <point x="8.666666666666629" y="-15.0" />
+      <point x="952.5" y="150.0" />
+      <point x="949.25" y="150.0" />
+      <point x="30.0" y="15.0" />
+    </edge>
+    <edge source="Ariados" target="CrossPoison">
+      <point x="-43.33333333333337" y="-15.0" />
+      <point x="900.5" y="250.0" />
+      <point x="747.6303030303029" y="250.0" />
+      <point x="747.6303030303029" y="160.0" />
+      <point x="737.25" y="160.0" />
+      <point x="-34.0" y="15.0" />
+    </edge>
+    <edge source="Cleffa" target="Facade">
+      <point x="24.0" y="-15.0" />
+      <point x="659.25" y="50.0" />
+      <point x="609.1641414141413" y="50.0" />
+      <point x="32.0" y="15.0" />
+    </edge>
+    <edge source="Giratina" target="WillOWisp">
+      <point x="14.0" y="-15.0" />
+      <point x="163.75" y="250.0" />
+      <point x="185.0" y="250.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Clefairy" target="DefenseCurl">
+      <point x="-44.799999999999955" y="-15.0" />
+      <point x="531.95" y="160.0" />
+      <point x="503.0" y="160.0" />
+      <point x="34.0" y="15.0" />
+    </edge>
+    <edge source="Battleground" target="Giratina">
+      <point x="-60.0" y="-15.0" />
+      <point x="580.6666666666667" y="340.0" />
+      <point x="149.75" y="340.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Battleground" target="Clefairy">
+      <point x="-12.0" y="-15.0" />
+      <point x="628.6666666666667" y="340.0" />
+      <point x="614.0833333333334" y="340.0" />
+      <point x="37.33333333333337" y="15.0" />
+    </edge>
+    <edge source="Clefable" target="Facade">
+      <point x="-9.333333333333314" y="-15.0" />
+      <point x="414.68535353535356" y="230.0" />
+      <point x="390.5" y="230.0" />
+      <point x="390.5" y="80.0" />
+      <point x="545.1641414141413" y="80.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Tree" zoom="0.9284595300261097" x="608.0" y="261.2795125666413" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
