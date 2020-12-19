@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ThirdLab:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,26 +25,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5760b375-a77e-4e65-87ba-e63afe03cce4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/BetanEricsonImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/CarlssonImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/ChildrenAbilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Door.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/EricEricsonImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Human.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Key.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Legs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/ManAbilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Nose.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Place.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Room.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Th.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/TheyImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CarlssonImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarlssonImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nose.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Результат.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/diagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/diagram.uml" beforeDir="false" afterPath="$PROJECT_DIR$/diagram.uml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ThirdLab/EricEricsonImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ThirdLab/EricEricsonImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ThirdLab/Human.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ThirdLab/Human.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ThirdLab/Legs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ThirdLab/Nose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ThirdLab/TheyImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ThirdLab/TheyImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Legs.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nose.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Отчёт.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчёт.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +72,10 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -91,6 +89,17 @@
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -113,6 +122,7 @@
       <workItem from="1608356185438" duration="86000" />
       <workItem from="1608356541109" duration="125000" />
       <workItem from="1608357141967" duration="349000" />
+      <workItem from="1608362294193" duration="795000" />
     </task>
     <servers />
   </component>
@@ -129,6 +139,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="653" y="77" width="814" height="723" key="#Intentions" timestamp="1608347124585">
@@ -147,30 +158,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="927" y="197" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1608333555011" />
+    <state x="530" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1608362759165">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="530" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1608362759165" />
     <state x="531" y="1" key="Diagram.Print.Preview.Dialog" timestamp="1608352193410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="531" y="1" key="Diagram.Print.Preview.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1608352193410" />
-    <state x="549" y="144" key="FileChooserDialogImpl" timestamp="1608356266923">
+    <state x="549" y="144" key="FileChooserDialogImpl" timestamp="1608362683585">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608356266923" />
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1608357490154">
+    <state x="549" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608362683585" />
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1608362458685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
-    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1608357490154">
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608362458685" />
+    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1608362458685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
-    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1608357490154">
+    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608362458685" />
+    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1608362458685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
-    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1608357490154">
+    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608362458685" />
+    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1608362458685">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
+    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608362458685" />
+    <state x="279" y="0" key="SettingsEditor" timestamp="1608363090080">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="279" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608363090080" />
     <state x="859" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608335264927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
