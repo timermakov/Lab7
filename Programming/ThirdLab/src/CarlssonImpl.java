@@ -4,7 +4,7 @@ public class CarlssonImpl extends Human implements ManAbilities {
     }
     @Override
     public void fallDown(String how, EricEricsonImpl him) {
-        System.out.print(getName() + " свалился " + how + " на " + him);
+        System.out.print(getName() + " свалился " + how + " на " + him.getName());
     }
 
     @Override

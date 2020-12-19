@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5760b375-a77e-4e65-87ba-e63afe03cce4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/BetanEricsonImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/CarlssonImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/ChildrenAbilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Door.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/EricEricsonImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Key.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Legs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/ManAbilities.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Nose.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Place.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Room.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/Th.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Лабораторная работа 3/TheyImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CarlssonImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarlssonImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nose.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Nose.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Результат.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1lqbNLqeGuPQSl93Ij0g7oiJJKR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ThirdLab" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5760b375-a77e-4e65-87ba-e63afe03cce4" name="Default Changelist" comment="" />
+      <created>1608327530598</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608327530598</updated>
+      <workItem from="1608327532042" duration="26136000" />
+      <workItem from="1608356185438" duration="86000" />
+      <workItem from="1608356541109" duration="125000" />
+      <workItem from="1608357141967" duration="349000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="653" y="77" width="814" height="723" key="#Intentions" timestamp="1608347124585">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="653" y="77" width="814" height="723" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1608347124585" />
+    <state x="498" y="0" key="#Project_Structure" timestamp="1608328616562">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1608328616562" />
+    <state x="1002" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1608353561693">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="1002" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608353561693" />
+    <state x="927" y="197" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1608333555011">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="927" y="197" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1608333555011" />
+    <state x="531" y="1" key="Diagram.Print.Preview.Dialog" timestamp="1608352193410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="531" y="1" key="Diagram.Print.Preview.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1608352193410" />
+    <state x="549" y="144" key="FileChooserDialogImpl" timestamp="1608356266923">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608356266923" />
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1608357490154">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
+    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1608357490154">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
+    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1608357490154">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
+    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1608357490154">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608357490154" />
+    <state x="859" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608335264927">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="859" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608335264927" />
+  </component>
+</project>

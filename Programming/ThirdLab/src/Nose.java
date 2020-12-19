@@ -13,7 +13,7 @@ public class Nose {
     }
 
     public void setName(String name) {
-        this.name = name + noseBetanEricson;
+        this.name = name + noseBetanEricson.getName();
     }
 
     public String getName() {
