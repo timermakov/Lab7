@@ -21,13 +21,21 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5760b375-a77e-4e65-87ba-e63afe03cce4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$Отчёт.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Отчёт.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Отчёт.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exceptions/NameLengthRuntimeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ThirdLab/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ThirdLab/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ThirdLab/~$Отчёт.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ThirdLab/Отчёт.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../ThirdLab/Отчёт.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +52,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="ProjectId" id="1lqbNLqeGuPQSl93Ij0g7oiJJKR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -57,7 +65,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../FourthLab/ThirdLab" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/diagram.uml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,9 +75,15 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\_ITMO\Labs\Programming\FourthLab\FourthLab\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="exceptions" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
     </key>
@@ -77,10 +91,23 @@
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="ThirdLab" />
+      <module name="FourthLab" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,7 +132,8 @@
       <workItem from="1608357141967" duration="349000" />
       <workItem from="1608362294193" duration="2910000" />
       <workItem from="1608936811404" duration="17000" />
-      <workItem from="1608937036498" duration="113000" />
+      <workItem from="1608937150770" duration="19000" />
+      <workItem from="1608937237131" duration="24977000" />
     </task>
     <servers />
   </component>
@@ -117,12 +145,29 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/../.." />
+    </ignored-roots>
   </component>
   <component name="WindowStateProjectService">
     <state x="653" y="77" width="814" height="723" key="#Intentions" timestamp="1608347124585">
@@ -133,10 +178,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1608328616562" />
-    <state x="1002" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1608353561693">
+    <state x="1002" y="125" key="#com.intellij.ide.util.MemberChooser" timestamp="1608967203658">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="1002" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608353561693" />
+    <state x="1002" y="125" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608967203658" />
     <state x="927" y="197" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1608333555011">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -145,37 +190,49 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="530" y="205" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1608362759165" />
+    <state x="562" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608963516264">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="562" y="312" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1608963516264" />
+    <state x="50" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1608968258011">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="50" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1608968258011" />
     <state x="531" y="1" key="Diagram.Print.Preview.Dialog" timestamp="1608352193410">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="531" y="1" key="Diagram.Print.Preview.Dialog/0.0.1536.824@0.0.1536.824" timestamp="1608352193410" />
-    <state x="549" y="144" key="FileChooserDialogImpl" timestamp="1608937148137">
+    <state x="549" y="144" key="FileChooserDialogImpl" timestamp="1608968763879">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608937148137" />
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom" timestamp="1608365734668">
+    <state x="549" y="144" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1608968763879" />
+    <state width="746" height="267" key="GridCell.Tab.0.bottom" timestamp="1608968414828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608365734668" />
-    <state width="1493" height="196" key="GridCell.Tab.0.center" timestamp="1608365734668">
+    <state width="746" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1608968414828" />
+    <state width="746" height="267" key="GridCell.Tab.0.center" timestamp="1608968414828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608365734668" />
-    <state width="1493" height="196" key="GridCell.Tab.0.left" timestamp="1608365734667">
+    <state width="746" height="267" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1608968414828" />
+    <state width="746" height="267" key="GridCell.Tab.0.left" timestamp="1608968414828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608365734667" />
-    <state width="1493" height="196" key="GridCell.Tab.0.right" timestamp="1608365734668">
+    <state width="746" height="267" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1608968414828" />
+    <state width="746" height="267" key="GridCell.Tab.0.right" timestamp="1608968414828">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="196" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608365734668" />
-    <state x="279" y="0" key="SettingsEditor" timestamp="1608363099376">
+    <state width="746" height="267" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1608968414828" />
+    <state x="279" y="0" key="SettingsEditor" timestamp="1608960618258">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="279" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608363099376" />
-    <state x="859" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608335264927">
+    <state x="279" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1608960618258" />
+    <state x="481" y="163" width="574" height="498" key="find.popup" timestamp="1608954946032">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="859" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608335264927" />
+    <state x="481" y="163" width="574" height="498" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1608954946032" />
+    <state x="859" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1608947945926">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="859" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1608947945926" />
   </component>
 </project>
