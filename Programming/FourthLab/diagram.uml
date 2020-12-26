@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="154.46100486580258" y="3084.0">BetanEricsonImpl</node>
+    <node x="1230.0514859141535" y="1374.5">EricEricsonImpl.LaughContainer</node>
+    <node x="196.76100486580253" y="1275.5">ChildrenAbilities</node>
+    <node x="2010.9986152089073" y="1374.0">Human.Forehead.Bump</node>
+    <node x="1566.6139859141535" y="808.0">CarlssonImpl</node>
+    <node x="878.2500000000001" y="2345.0">TheyImpl</node>
+    <node x="1542.9110048658026" y="1799.0">EricEricsonImpl</node>
+    <node x="79.0" y="1897.5">Human.Nose</node>
+    <node x="546.2610048658025" y="1329.5">Room</node>
+    <node x="1701.6565099457493" y="480.0">ManAbilities</node>
+    <node x="1352.2389859141535" y="512.5">Human</node>
+    <node x="2312.657057497381" y="3216.5">Sound</node>
+    <node x="1473.0514859141535" y="1296.0">Human.Legs</node>
+    <node x="2031.2060911773115" y="918.5">Human.Forehead</node>
+    <node x="330.76100486580253" y="313.0">exceptions</node>
+    <node x="1758.2389859141535" y="0.0">Door</node>
+    <node x="2491.657057497381" y="0.0">META-INF</node>
+    <node x="1987.2360048658024" y="2488.0">MotherImpl</node>
+    <node x="1739.6565099457493" y="256.0">Door.Key</node>
+    <node x="1050.0514859141535" y="1186.0">Words</node>
+    <node x="2074.3938996026445" y="3599.0">Main</node>
+    <node x="624.6360048658025" y="1920.5">Place</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Main" target="Sound">
+      <point x="61.4736842105263" y="-38.0" />
+      <point x="2208.8675838131708" y="3569.0" />
+      <point x="2379.657057497381" y="3569.0" />
+      <point x="0.0" y="50.0" />
+    </edge>
+    <edge source="TheyImpl" target="TheyImpl">
+      <point x="-70.28571428571428" y="314.5" />
+      <point x="930.9642857142858" y="3004.0" />
+      <point x="848.2500000000001" y="3004.0" />
+      <point x="848.2500000000001" y="2502.25" />
+      <point x="-123.0" y="-157.25" />
+    </edge>
+    <edge source="TheyImpl" target="BetanEricsonImpl">
+      <point x="0.0" y="314.5" />
+      <point x="1001.2500000000001" y="3054.0" />
+      <point x="326.9610048658026" y="3054.0" />
+      <point x="69.0" y="-182.5" />
+    </edge>
+    <edge source="EricEricsonImpl" target="Door">
+      <point x="52.499999999999886" y="-193.0" />
+      <point x="1700.4110048658026" y="1739.0" />
+      <point x="1958.1565099457493" y="1739.0" />
+      <point x="1958.1565099457493" y="236.0" />
+      <point x="1875.1139859141535" y="236.0" />
+      <point x="31.875" y="83.0" />
+    </edge>
+    <edge source="EricEricsonImpl.LaughContainer" target="EricEricsonImpl">
+      <point x="63.66666666666674" y="38.0" />
+      <point x="1389.21815258082" y="1729.0" />
+      <point x="1583.7443381991359" y="1729.0" />
+      <point x="-64.16666666666674" y="-193.0" />
+    </edge>
+    <edge source="Human" target="Human">
+      <point x="-79.6875" y="71.5" />
+      <point x="1357.5514859141535" y="675.5" />
+      <point x="1332.2389859141535" y="675.5" />
+      <point x="1332.2389859141535" y="584.0" />
+      <point x="-85.0" y="-0.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="Human.Legs">
+      <point x="-29.166666666666856" y="-193.0" />
+      <point x="1618.7443381991359" y="1699.0" />
+      <point x="1533.9514859141534" y="1699.0" />
+      <point x="-40.60000000000002" y="116.5" />
+    </edge>
+    <edge source="MotherImpl" target="EricEricsonImpl">
+      <point x="-81.99999999999994" y="-171.5" />
+      <point x="2028.2360048658024" y="2285.0" />
+      <point x="1737.9110048658026" y="2285.0" />
+      <point x="89.99999999999989" y="193.0" />
+    </edge>
+    <edge source="Human.Nose" target="BetanEricsonImpl">
+      <point x="0.0" y="94.5" />
+      <point x="195.5" y="3024.0" />
+      <point x="257.9610048658026" y="3024.0" />
+      <point x="0.0" y="-182.5" />
+    </edge>
+    <edge source="Human.Legs" target="Human">
+      <point x="-81.20000000000005" y="-116.5" />
+      <point x="1493.3514859141535" y="1136.0" />
+      <point x="1517.424990779956" y="1136.0" />
+      <point x="1517.424990779956" y="778.0" />
+      <point x="1453.1764859141535" y="778.0" />
+      <point x="15.9375" y="71.5" />
+    </edge>
+    <edge source="Room" target="Human">
+      <point x="0.0" y="-83.0" />
+      <point x="647.7610048658025" y="768.0" />
+      <point x="1410.6764859141535" y="768.0" />
+      <point x="-26.5625" y="71.5" />
+    </edge>
+    <edge source="BetanEricsonImpl" target="TheyImpl">
+      <point x="46.0" y="-182.5" />
+      <point x="303.9610048658026" y="3044.0" />
+      <point x="966.107142857143" y="3044.0" />
+      <point x="-35.14285714285711" y="314.5" />
+    </edge>
+    <edge source="EricEricsonImpl" target="Words">
+      <point x="-87.50000000000011" y="-193.0" />
+      <point x="1560.4110048658026" y="1749.0" />
+      <point x="1196.7181525808203" y="1749.0" />
+      <point x="66.66666666666674" y="226.5" />
+    </edge>
+    <edge source="CarlssonImpl" target="EricEricsonImpl">
+      <point x="46.125" y="149.0" />
+      <point x="1735.7389859141535" y="1166.0" />
+      <point x="1776.0934808342063" y="1166.0" />
+      <point x="1776.0934808342063" y="1719.0" />
+      <point x="1677.0776715324691" y="1719.0" />
+      <point x="29.166666666666515" y="-193.0" />
+    </edge>
+    <edge source="Room" target="Place">
+      <point x="76.125" y="83.0" />
+      <point x="723.8860048658025" y="1779.0" />
+      <point x="752.1360048658025" y="1779.0" />
+      <point x="42.5" y="-71.5" />
+    </edge>
+    <edge source="Main" target="Door">
+      <point x="53.78947368421052" y="-38.0" />
+      <point x="2201.183373286855" y="3559.0" />
+      <point x="2282.157057497381" y="3559.0" />
+      <point x="2282.157057497381" y="216.0" />
+      <point x="1917.6139859141535" y="216.0" />
+      <point x="74.375" y="83.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="ChildrenAbilities">
+      <point x="-99.16666666666674" y="-193.0" />
+      <point x="1548.7443381991359" y="1759.0" />
+      <point x="369.26100486580253" y="1759.0" />
+      <point x="69.0" y="137.0" />
+    </edge>
+    <edge source="Door.Key" target="Door.Key">
+      <point x="-72.85714285714289" y="72.0" />
+      <point x="1751.7993670886067" y="420.0" />
+      <point x="1719.6565099457493" y="420.0" />
+      <point x="1719.6565099457493" y="328.0" />
+      <point x="-85.0" y="-0.0" />
+    </edge>
+    <edge source="ChildrenAbilities" target="Door">
+      <point x="0.0" y="-137.0" />
+      <point x="300.26100486580253" y="216.0" />
+      <point x="1811.3639859141535" y="216.0" />
+      <point x="-31.875" y="83.0" />
+    </edge>
+    <edge source="ManAbilities" target="EricEricsonImpl">
+      <point x="30.75" y="104.0" />
+      <point x="1855.4065099457493" y="788.0" />
+      <point x="1884.6139859141535" y="788.0" />
+      <point x="1884.6139859141535" y="1729.0" />
+      <point x="1688.7443381991359" y="1729.0" />
+      <point x="40.83333333333326" y="-193.0" />
+    </edge>
+    <edge source="TheyImpl" target="Human">
+      <point x="0.0" y="-314.5" />
+      <point x="1001.2500000000001" y="2255.0" />
+      <point x="826.7500000000001" y="2255.0" />
+      <point x="826.7500000000001" y="778.0" />
+      <point x="1421.3014859141535" y="778.0" />
+      <point x="-15.9375" y="71.5" />
+    </edge>
+    <edge source="EricEricsonImpl" target="EricEricsonImpl.LaughContainer">
+      <point x="-75.83333333333337" y="-193.0" />
+      <point x="1572.0776715324694" y="1739.0" />
+      <point x="1325.5514859141535" y="1739.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+    <edge source="Human.Nose" target="Human">
+      <point x="77.66666666666652" y="-94.5" />
+      <point x="273.1666666666665" y="1759.0" />
+      <point x="163.40415744662278" y="1759.0" />
+      <point x="163.40415744662278" y="758.0" />
+      <point x="1400.0514859141535" y="758.0" />
+      <point x="-37.1875" y="71.5" />
+    </edge>
+    <edge source="MotherImpl" target="MotherImpl">
+      <point x="-82.0" y="171.5" />
+      <point x="2028.2360048658024" y="2851.0" />
+      <point x="1967.2360048658024" y="2851.0" />
+      <point x="1967.2360048658024" y="2659.5" />
+      <point x="-123.0" y="-0.0" />
+    </edge>
+    <edge source="BetanEricsonImpl" target="ChildrenAbilities">
+      <point x="-46.0" y="-182.5" />
+      <point x="211.96100486580258" y="3044.0" />
+      <point x="48.5" y="3044.0" />
+      <point x="48.5" y="1779.0" />
+      <point x="231.26100486580253" y="1779.0" />
+      <point x="-69.0" y="137.0" />
+    </edge>
+    <edge source="MotherImpl" target="Human">
+      <point x="54.66666666666674" y="-171.5" />
+      <point x="2164.902671532469" y="2315.0" />
+      <point x="2191.7060911773115" y="2315.0" />
+      <point x="2191.7060911773115" y="718.0" />
+      <point x="1516.9264859141535" y="718.0" />
+      <point x="79.6875" y="71.5" />
+    </edge>
+    <edge source="Main" target="CarlssonImpl">
+      <point x="15.368421052631561" y="-38.0" />
+      <point x="2162.762320655276" y="3509.0" />
+      <point x="2243.7360048658024" y="3509.0" />
+      <point x="2243.7360048658024" y="1136.0" />
+      <point x="1766.4889859141535" y="1136.0" />
+      <point x="76.875" y="149.0" />
+    </edge>
+    <edge source="Human.Nose" target="Human.Nose">
+      <point x="-93.20000000000005" y="94.5" />
+      <point x="102.29999999999995" y="2106.5" />
+      <point x="59.0" y="2106.5" />
+      <point x="59.0" y="1992.0" />
+      <point x="-116.5" y="-0.0" />
+    </edge>
+    <edge source="Main" target="Door.Key">
+      <point x="38.42105263157896" y="-38.0" />
+      <point x="2185.8149522342237" y="3539.0" />
+      <point x="2266.7886364447495" y="3539.0" />
+      <point x="2266.7886364447495" y="440.0" />
+      <point x="1897.5136528028922" y="440.0" />
+      <point x="72.85714285714278" y="72.0" />
+    </edge>
+    <edge source="BetanEricsonImpl" target="Words">
+      <point x="23.0" y="-182.5" />
+      <point x="280.9610048658026" y="3034.0" />
+      <point x="837.7500000000001" y="3034.0" />
+      <point x="837.7500000000001" y="1769.0" />
+      <point x="1090.0514859141535" y="1769.0" />
+      <point x="-40.0" y="226.5" />
+    </edge>
+    <edge source="BetanEricsonImpl" target="Door">
+      <point x="-92.0" y="-182.5" />
+      <point x="165.96100486580258" y="3064.0" />
+      <point x="26.5" y="3064.0" />
+      <point x="26.5" y="206.0" />
+      <point x="1790.1139859141535" y="206.0" />
+      <point x="-53.125" y="83.0" />
+    </edge>
+    <edge source="CarlssonImpl" target="Door.Key">
+      <point x="30.75" y="-149.0" />
+      <point x="1720.3639859141535" y="778.0" />
+      <point x="1691.1565099457493" y="778.0" />
+      <point x="1691.1565099457493" y="460.0" />
+      <point x="1800.3707956600351" y="460.0" />
+      <point x="-24.285714285714278" y="72.0" />
+    </edge>
+    <edge source="Main" target="TheyImpl">
+      <point x="-46.1052631578948" y="-38.0" />
+      <point x="2101.2886364447495" y="3549.0" />
+      <point x="1078.0111465372283" y="3549.0" />
+      <point x="1078.0111465372283" y="3064.0" />
+      <point x="1071.5357142857147" y="3064.0" />
+      <point x="70.28571428571445" y="314.5" />
+    </edge>
+    <edge source="Main" target="Words">
+      <point x="-30.736842105263122" y="-38.0" />
+      <point x="2116.657057497381" y="3529.0" />
+      <point x="1149.1166666666668" y="3529.0" />
+      <point x="1149.1166666666668" y="1779.0" />
+      <point x="1143.3848192474868" y="1779.0" />
+      <point x="13.333333333333258" y="226.5" />
+    </edge>
+    <edge source="Main" target="EricEricsonImpl.LaughContainer">
+      <point x="-23.0526315789474" y="-38.0" />
+      <point x="2124.341268023697" y="3519.0" />
+      <point x="1274.3443381991358" y="3519.0" />
+      <point x="1274.3443381991358" y="1779.0" />
+      <point x="1261.8848192474866" y="1779.0" />
+      <point x="-63.66666666666674" y="38.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="CarlssonImpl">
+      <point x="17.499999999999886" y="-193.0" />
+      <point x="1665.4110048658026" y="1709.0" />
+      <point x="1712.7624999999998" y="1709.0" />
+      <point x="1712.7624999999998" y="1166.0" />
+      <point x="1704.9889859141535" y="1166.0" />
+      <point x="15.375" y="149.0" />
+    </edge>
+    <edge source="MotherImpl" target="Human.Forehead.Bump">
+      <point x="-27.333333333333258" y="-171.5" />
+      <point x="2082.902671532469" y="2285.0" />
+      <point x="2112.5125" y="2285.0" />
+      <point x="2112.5125" y="1779.0" />
+      <point x="2115.1236152089073" y="1779.0" />
+      <point x="44.625" y="38.5" />
+    </edge>
+    <edge source="Human" target="exceptions">
+      <point x="0.0" y="-71.5" />
+      <point x="1437.2389859141535" y="440.0" />
+      <point x="475.76100486580253" y="440.0" />
+      <point x="58.0" y="15.0" />
+    </edge>
+    <edge source="Room" target="Room">
+      <point x="-76.125" y="83.0" />
+      <point x="571.6360048658025" y="1515.5" />
+      <point x="526.2610048658025" y="1515.5" />
+      <point x="526.2610048658025" y="1412.5" />
+      <point x="-101.5" y="-0.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="EricEricsonImpl">
+      <point x="-90.0" y="193.0" />
+      <point x="1557.9110048658026" y="2205.0" />
+      <point x="1522.9110048658026" y="2205.0" />
+      <point x="1522.9110048658026" y="1992.0" />
+      <point x="-105.0" y="-0.0" />
+    </edge>
+    <edge source="Place" target="Room">
+      <point x="-42.5" y="-71.5" />
+      <point x="667.1360048658025" y="1779.0" />
+      <point x="673.1360048658025" y="1779.0" />
+      <point x="25.375" y="83.0" />
+    </edge>
+    <edge source="TheyImpl" target="ManAbilities">
+      <point x="16.399999999999864" y="-314.5" />
+      <point x="1017.65" y="2245.0" />
+      <point x="997.5514859141535" y="2245.0" />
+      <point x="997.5514859141535" y="788.0" />
+      <point x="1732.4065099457493" y="788.0" />
+      <point x="-92.25" y="104.0" />
+    </edge>
+    <edge source="MotherImpl" target="Door.Key">
+      <point x="109.33333333333337" y="-171.5" />
+      <point x="2219.569338199136" y="2325.0" />
+      <point x="2213.7060911773115" y="2325.0" />
+      <point x="2213.7060911773115" y="460.0" />
+      <point x="1848.9422242314638" y="460.0" />
+      <point x="24.285714285714278" y="72.0" />
+    </edge>
+    <edge source="Human.Forehead" target="Human">
+      <point x="0.0" y="-38.5" />
+      <point x="2099.7060911773115" y="728.0" />
+      <point x="1506.3014859141535" y="728.0" />
+      <point x="69.0625" y="71.5" />
+    </edge>
+    <edge source="Main" target="EricEricsonImpl">
+      <point x="-7.684210526315837" y="-38.0" />
+      <point x="2139.7096890763287" y="3499.0" />
+      <point x="1696.7531101289605" y="3499.0" />
+      <point x="1696.7531101289605" y="2325.0" />
+      <point x="1707.9110048658026" y="2325.0" />
+      <point x="60.0" y="193.0" />
+    </edge>
+    <edge source="exceptions" target="exceptions">
+      <point x="-58.0" y="15.0" />
+      <point x="359.76100486580253" y="363.0" />
+      <point x="310.76100486580253" y="363.0" />
+      <point x="310.76100486580253" y="328.0" />
+      <point x="-87.0" y="-0.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="Human">
+      <point x="-40.833333333333485" y="-193.0" />
+      <point x="1607.0776715324691" y="1709.0" />
+      <point x="1442.5514859141535" y="1709.0" />
+      <point x="5.3125" y="71.5" />
+    </edge>
+    <edge source="ManAbilities" target="Door.Key">
+      <point x="0.0" y="-104.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="Human.Forehead">
+      <point x="64.16666666666652" y="-193.0" />
+      <point x="1712.0776715324691" y="1749.0" />
+      <point x="1969.1565099457493" y="1749.0" />
+      <point x="1969.1565099457493" y="1146.0" />
+      <point x="2044.9060911773113" y="1146.0" />
+      <point x="-54.80000000000007" y="38.5" />
+    </edge>
+    <edge source="Human.Legs" target="Human.Legs">
+      <point x="-81.19999999999999" y="116.5" />
+      <point x="1493.3514859141535" y="1549.0" />
+      <point x="1453.0514859141535" y="1549.0" />
+      <point x="1453.0514859141535" y="1412.5" />
+      <point x="-101.5" y="-0.0" />
+    </edge>
+    <edge source="TheyImpl" target="Human.Nose">
+      <point x="-114.79999999999995" y="-314.5" />
+      <point x="886.4500000000002" y="2325.0" />
+      <point x="242.0999999999999" y="2325.0" />
+      <point x="46.59999999999991" y="94.5" />
+    </edge>
+    <edge source="TheyImpl" target="Place">
+      <point x="-32.799999999999955" y="-314.5" />
+      <point x="968.4500000000002" y="2275.0" />
+      <point x="752.1360048658025" y="2275.0" />
+      <point x="42.5" y="71.5" />
+    </edge>
+    <edge source="MotherImpl" target="ManAbilities">
+      <point x="82.0" y="-171.5" />
+      <point x="2192.2360048658024" y="2325.0" />
+      <point x="2202.7060911773115" y="2325.0" />
+      <point x="2202.7060911773115" y="708.0" />
+      <point x="1916.9065099457493" y="708.0" />
+      <point x="92.25" y="104.0" />
+    </edge>
+    <edge source="TheyImpl" target="Door">
+      <point x="-65.60000000000014" y="-314.5" />
+      <point x="935.65" y="2295.0" />
+      <point x="515.7610048658025" y="2295.0" />
+      <point x="515.7610048658025" y="226.0" />
+      <point x="1832.6139859141535" y="226.0" />
+      <point x="-10.625" y="83.0" />
+    </edge>
+    <edge source="Door" target="Door">
+      <point x="-74.375" y="83.0" />
+      <point x="1768.8639859141535" y="186.0" />
+      <point x="1738.2389859141535" y="186.0" />
+      <point x="1738.2389859141535" y="83.0" />
+      <point x="-85.0" y="-0.0" />
+    </edge>
+    <edge source="CarlssonImpl" target="ManAbilities">
+      <point x="92.25" y="-149.0" />
+      <point x="1781.8639859141535" y="788.0" />
+      <point x="1793.9065099457493" y="788.0" />
+      <point x="-30.75" y="104.0" />
+    </edge>
+    <edge source="Sound" target="Sound">
+      <point x="-44.66666666666663" y="50.0" />
+      <point x="2334.9903908307147" y="3336.5" />
+      <point x="2292.657057497381" y="3336.5" />
+      <point x="2292.657057497381" y="3266.5" />
+      <point x="-67.0" y="-0.0" />
+    </edge>
+    <edge source="Place" target="Place">
+      <point x="-42.5" y="71.5" />
+      <point x="667.1360048658025" y="2083.5" />
+      <point x="604.6360048658025" y="2083.5" />
+      <point x="604.6360048658025" y="1992.0" />
+      <point x="-85.0" y="-0.0" />
+    </edge>
+    <edge source="BetanEricsonImpl" target="BetanEricsonImpl">
+      <point x="-69.0" y="182.5" />
+      <point x="188.96100486580258" y="3469.0" />
+      <point x="134.46100486580258" y="3469.0" />
+      <point x="134.46100486580258" y="3266.5" />
+      <point x="-103.5" y="-0.0" />
+    </edge>
+    <edge source="Main" target="exceptions">
+      <point x="-69.15789473684208" y="-38.0" />
+      <point x="2078.2360048658024" y="3579.0" />
+      <point x="0.0" y="3579.0" />
+      <point x="0.0" y="460.0" />
+      <point x="417.76100486580253" y="460.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="Main" target="BetanEricsonImpl">
+      <point x="-61.47368421052636" y="-38.0" />
+      <point x="2085.9202153921183" y="3569.0" />
+      <point x="257.9610048658026" y="3569.0" />
+      <point x="0.0" y="182.5" />
+    </edge>
+    <edge source="Words" target="Words">
+      <point x="-66.66666666666669" y="226.5" />
+      <point x="1063.3848192474868" y="1659.0" />
+      <point x="1030.0514859141535" y="1659.0" />
+      <point x="1030.0514859141535" y="1412.5" />
+      <point x="-80.0" y="-0.0" />
+    </edge>
+    <edge source="EricEricsonImpl" target="Human.Forehead.Bump">
+      <point x="87.49999999999989" y="-193.0" />
+      <point x="1735.4110048658026" y="1769.0" />
+      <point x="2025.8736152089073" y="1769.0" />
+      <point x="-44.625" y="38.5" />
+    </edge>
+    <edge source="TheyImpl" target="EricEricsonImpl">
+      <point x="82.0" y="-314.5" />
+      <point x="1083.25" y="2305.0" />
+      <point x="1587.9110048658026" y="2305.0" />
+      <point x="-60.0" y="193.0" />
+    </edge>
+    <edge source="Main" target="MotherImpl">
+      <point x="0.0" y="-38.0" />
+      <point x="2147.3938996026445" y="3489.0" />
+      <point x="2173.96815258082" y="3489.0" />
+      <point x="2173.96815258082" y="3064.0" />
+      <point x="2110.2360048658024" y="3064.0" />
+      <point x="0.0" y="171.5" />
+    </edge>
+    <edge source="TheyImpl" target="Room">
+      <point x="-49.200000000000045" y="-314.5" />
+      <point x="952.0500000000001" y="2285.0" />
+      <point x="573.5731766124162" y="2285.0" />
+      <point x="573.5731766124162" y="1779.0" />
+      <point x="622.3860048658025" y="1779.0" />
+      <point x="-25.375" y="83.0" />
+    </edge>
+    <edge source="MotherImpl" target="Human.Forehead">
+      <point x="27.33333333333337" y="-171.5" />
+      <point x="2137.569338199136" y="2305.0" />
+      <point x="2180.7060911773115" y="2305.0" />
+      <point x="2180.7060911773115" y="1166.0" />
+      <point x="2154.5060911773116" y="1166.0" />
+      <point x="54.80000000000007" y="38.5" />
+    </edge>
+    <edge source="TheyImpl" target="CarlssonImpl">
+      <point x="32.799999999999955" y="-314.5" />
+      <point x="1034.0500000000002" y="2235.0" />
+      <point x="1008.5514859141535" y="2235.0" />
+      <point x="1008.5514859141535" y="1146.0" />
+      <point x="1581.9889859141535" y="1146.0" />
+      <point x="-107.625" y="149.0" />
+    </edge>
+    <edge source="MotherImpl" target="Words">
+      <point x="-109.33333333333326" y="-171.5" />
+      <point x="2000.9026715324692" y="2295.0" />
+      <point x="1219.2288975008732" y="2295.0" />
+      <point x="1219.2288975008732" y="1779.0" />
+      <point x="1170.0514859141535" y="1779.0" />
+      <point x="40.0" y="226.5" />
+    </edge>
+    <edge source="TheyImpl" target="Words">
+      <point x="65.59999999999991" y="-314.5" />
+      <point x="1066.85" y="2295.0" />
+      <point x="1087.2" y="2295.0" />
+      <point x="1087.2" y="1779.0" />
+      <point x="1116.7181525808203" y="1779.0" />
+      <point x="-13.333333333333258" y="226.5" />
+    </edge>
+    <edge source="CarlssonImpl" target="Human">
+      <point x="-92.25" y="-149.0" />
+      <point x="1597.3639859141535" y="748.0" />
+      <point x="1485.0514859141535" y="748.0" />
+      <point x="47.8125" y="71.5" />
+    </edge>
+    <edge source="Door.Key" target="Door">
+      <point x="0.0" y="-72.0" />
+      <point x="1824.6565099457493" y="236.0" />
+      <point x="1853.8639859141535" y="236.0" />
+      <point x="10.625" y="83.0" />
+    </edge>
+    <edge source="TheyImpl" target="Door.Key">
+      <point x="-16.40000000000009" y="-314.5" />
+      <point x="984.85" y="2265.0" />
+      <point x="805.1360048658025" y="2265.0" />
+      <point x="805.1360048658025" y="450.0" />
+      <point x="1776.085081374321" y="450.0" />
+      <point x="-48.571428571428555" y="72.0" />
+    </edge>
+    <edge source="TheyImpl" target="ChildrenAbilities">
+      <point x="-82.0" y="-314.5" />
+      <point x="919.2500000000001" y="2305.0" />
+      <point x="322.5" y="2305.0" />
+      <point x="322.5" y="1779.0" />
+      <point x="300.26100486580253" y="1779.0" />
+      <point x="0.0" y="137.0" />
+    </edge>
+    <edge source="Human.Legs" target="CarlssonImpl">
+      <point x="40.59999999999991" y="-116.5" />
+      <point x="1615.1514859141535" y="1166.0" />
+      <point x="1643.4889859141535" y="1166.0" />
+      <point x="-46.125" y="149.0" />
+    </edge>
+    <edge source="BetanEricsonImpl" target="Human">
+      <point x="-69.0" y="-182.5" />
+      <point x="188.96100486580258" y="3054.0" />
+      <point x="37.5" y="3054.0" />
+      <point x="37.5" y="728.0" />
+      <point x="1368.1764859141535" y="728.0" />
+      <point x="-69.0625" y="71.5" />
+    </edge>
+    <edge source="Human.Forehead.Bump" target="Human.Forehead">
+      <point x="0.0" y="-38.5" />
+      <point x="2070.4986152089073" y="1166.0" />
+      <point x="2099.7060911773115" y="1166.0" />
+      <point x="0.0" y="38.5" />
+    </edge>
+    <edge source="Human.Legs" target="EricEricsonImpl">
+      <point x="40.60000000000002" y="116.5" />
+      <point x="1615.1514859141535" y="1679.0" />
+      <point x="1642.0776715324691" y="1679.0" />
+      <point x="-5.833333333333485" y="-193.0" />
+    </edge>
+  </edges>
+  <settings layout="Tree" zoom="0.4449664429530201" x="1237.3981900452488" y="2326.0165912518855" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>Production</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
