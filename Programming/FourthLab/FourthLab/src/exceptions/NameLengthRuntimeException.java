@@ -9,7 +9,7 @@ public class NameLengthRuntimeException extends RuntimeException {
     }
 
     public NameLengthRuntimeException(String msg, String name){
-        super (msg);
+        super(msg);
         this.name = name;
     }
 

@@ -1,50 +1,21 @@
-public class BetanEricsonImpl extends Human implements ChildrenAbilities {
+import java.util.Objects;
+
+public class BetanEricsonImpl extends Human implements BetanEricsonAbilities {
     public BetanEricsonImpl(int form) {
         this.setName(form);
     }
 
-    private String Name;
-    private int Age;
+    private String name;
+    private int age;
 
     public void setName(int form) {
-        if (form == 1) this.Name = "Бетан";
-        else if (form == 2) this.Name = "она";
+        if (form == 1) this.name = "Бетан";
+        else if (form == 2) this.name = "она";
     }
 
     public String getName() {
-        return this.Name;
+        return this.name;
     }
-
-    @Override
-    public void keepCalm() {
-
-    }
-
-    @Override
-    public void doNotUnderstand() {
-
-    }
-
-    @Override
-    public void crawl(String how) {
-
-    }
-
-    @Override
-    public void breakIn(String how, int form, String when) {
-
-    }
-
-    @Override
-    public void run(String how) {
-
-    }
-
-    @Override
-    public void go(String where) {
-
-    }
-
 
     @Override
     public void overtake(String when) {
@@ -75,5 +46,20 @@ public class BetanEricsonImpl extends Human implements ChildrenAbilities {
     @Override
     public String toString() {
         return "BetanEricsonImpl{}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        BetanEricsonImpl that = (BetanEricsonImpl) o;
+        return age == that.age &&
+                Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), name, age);
     }
 }

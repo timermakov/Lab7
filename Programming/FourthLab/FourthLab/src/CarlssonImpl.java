@@ -1,22 +1,20 @@
-public class CarlssonImpl extends Human implements ManAbilities {
-    private String Name;
-    private int Age;
+import java.util.Objects;
+
+public class CarlssonImpl extends Human implements CarlssonAbilities {
+    private String name;
+    private int age;
 
     public CarlssonImpl(String name) {
         setName(name);
     }
+
     @Override
-    public void fallDown(String how, EricEricsonImpl him) {
-        System.out.print(getName() + " свалился " + how + " на " + him.getName());
+    public void fallDown(String how) {
+        System.out.print(getName() + " свалился " + how);
     }
 
     @Override
-    public void breakIn(String how, int form, String when) {
-
-    }
-
-    @Override
-    public void turn(String how, Door.Key key) {
+    public void turn(String how, Key key) {
         System.out.print( getName() + how + "повернул " + key.getName());
     }
 
@@ -31,23 +29,22 @@ public class CarlssonImpl extends Human implements ManAbilities {
     }
 
     @Override
-    public void cook(String where) {
-
-    }
-
-    @Override
-    public void see(String what) {
-
-    }
-
-    @Override
-    public void sad() {
-
-    }
-
-
-    @Override
     public String toString() {
         return "CarlssonImpl{}";
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        CarlssonImpl carlsson = (CarlssonImpl) o;
+        return age == carlsson.age &&
+                Objects.equals(name, carlsson.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), name, age);
     }
 }

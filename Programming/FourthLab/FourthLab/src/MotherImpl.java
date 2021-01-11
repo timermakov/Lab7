@@ -1,39 +1,20 @@
 import java.util.Objects;
 
-public class MotherImpl extends Human implements ManAbilities {
+public class MotherImpl extends Human implements MotherAbilities {
     public MotherImpl(int form) {
         this.setName(form);
     }
 
-    private String Name;
-    private int Age;
+    private String name;
+    private int age;
 
     public void setName(int form) {
-        if (form == 1) this.Name = "Мама";
-        else if (form == 2) this.Name = "она";
+        if (form == 1) this.name = "Мама";
+        else if (form == 2) this.name = "она";
     }
 
     public String getName() {
-        return this.Name;
-    }
-    @Override
-    public void fallDown(String how, EricEricsonImpl him) {
-    }
-
-    @Override
-    public void breakIn(String how, int form, String when) {
-    }
-
-    @Override
-    public void turn(String how, Door.Key key) {
-    }
-
-    @Override
-    public void laugh(String how) {
-    }
-
-    @Override
-    public void bet() {
+        return this.name;
     }
 
     @Override
@@ -60,18 +41,18 @@ public class MotherImpl extends Human implements ManAbilities {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
         MotherImpl mother = (MotherImpl) o;
-        return Objects.equals(Name, mother.Name);
+        return Objects.equals(name, mother.name);
     }
 
     @Override
     public String toString() {
         return "MotherImpl{" +
-                "Name='" + Name + '\'' +
+                "name='" + name + '\'' +
                 '}';
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), Name);
+        return Objects.hash(super.hashCode(), name);
     }
 }

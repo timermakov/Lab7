@@ -1,12 +1,12 @@
 import java.util.Objects;
 
 public class Place {
-    private String Name;
+    private String name;
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
     public String getName() {
-        return this.Name;
+        return this.name;
     }
 
     public String location (Room room){
@@ -16,7 +16,7 @@ public class Place {
     @Override
     public String toString() {
         return "Place{" +
-                "Name='" + Name + '\'' +
+                "name='" + name + '\'' +
                 '}';
     }
 
@@ -25,11 +25,11 @@ public class Place {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Place place = (Place) o;
-        return Objects.equals(Name, place.Name);
+        return Objects.equals(name, place.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Name);
+        return Objects.hash(name);
     }
 }

@@ -1,6 +1,6 @@
-public class EricEricsonImpl extends Human implements ChildrenAbilities {
-    private String Name;
-    private int Age;
+public class EricEricsonImpl extends Human implements EricEricsonAbilities {
+    private String name;
+    private int age;
 
     public EricEricsonImpl(String name) {
         setName(name);
@@ -36,15 +36,6 @@ public class EricEricsonImpl extends Human implements ChildrenAbilities {
                 + ", где " + legsEricEricson.getName() + ", а где " + legsCarlsson.getName());
     }
 
-    @Override
-    public void crawl(String how) {
-
-    }
-
-    @Override
-    public void breakIn(String how, int form, String when) {
-
-    }
 
     @Override
     public void run(String how) {
@@ -57,30 +48,10 @@ public class EricEricsonImpl extends Human implements ChildrenAbilities {
     }
 
     @Override
-    public void overtake(String when) {
-
-    }
-
-    @Override
-    public void grab() {
-
-    }
-
-    @Override
-    public void knock(String how, Door door) {
-
-    }
-
-    @Override
     public void angry() {
         Forehead foreheadEricEricson = this.new Forehead("лбу");
         Forehead.Bump bumpEricEricson = foreheadEricEricson.new Bump("шишкой");
         System.out.print(" злой, с " + bumpEricEricson.getName() + " на " + foreheadEricEricson.getName());
-    }
-
-    @Override
-    public void hear() {
-
     }
 
     @Override

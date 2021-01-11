@@ -1,15 +1,16 @@
 import java.util.Objects;
 
-public class Room extends Place {
-    public Room(String name, Human human) {
-        setName(name, human);
+public class Key {
+    public Key(String name) {
+        setName(name);
     }
 
     private String name;
 
-    public void setName(String name, Human human) {
-        this.name = name + human.getName();
+    public void setName(String name) {
+        this.name = name;
     }
+
     public String getName() {
         return this.name;
     }
@@ -18,13 +19,13 @@ public class Room extends Place {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Room room = (Room) o;
-        return Objects.equals(name, room.name);
+        Key key = (Key) o;
+        return Objects.equals(name, key.name);
     }
 
     @Override
     public String toString() {
-        return "Room{" +
+        return "Door.Key{" +
                 "name='" + name + '\'' +
                 '}';
     }

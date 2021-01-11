@@ -5,12 +5,14 @@ public class Door {
         setName(name);
     }
 
-    private String Name;
+    private String name;
+    private boolean condition;
+
     public void setName(String name) {
-        this.Name = name;
+        this.name = name;
     }
     public String getName() {
-        return this.Name;
+        return this.name;
     }
     public String close() {
         return ("захлопнув " + getName());
@@ -21,54 +23,34 @@ public class Door {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Door door = (Door) o;
-        return Objects.equals(Name, door.Name);
+        return Objects.equals(name, door.name);
     }
 
     @Override
     public String toString() {
         return "Door{" +
-                "Name='" + Name + '\'' +
+                "name='" + name + '\'' +
+                ", condition=" + condition +
                 '}';
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Name);
+        return Objects.hash(name);
     }
 
-    public static class Key {
-        public Key(String name) {
-            setName(name);
-        }
+    public boolean isOpened() {
+        if (condition) return true;
+        else return false;
+    }
 
-        private String Name;
-
-        public void setName(String name) {
-            this.Name = name;
-        }
-
-        public String getName() {
-            return this.Name;
-        }
-
-        @Override
-        public boolean equals(Object o) {
-            if (this == o) return true;
-            if (o == null || getClass() != o.getClass()) return false;
-            Key key = (Key) o;
-            return Objects.equals(Name, key.Name);
-        }
-
-        @Override
-        public String toString() {
-            return "Door.Key{" +
-                    "Name='" + Name + '\'' +
-                    '}';
-        }
-
-        @Override
-        public int hashCode() {
-            return Objects.hash(Name);
+    public class Handle {
+        Door door = new Door("дверь");
+        public void press(Door door) {
+            if (door.isOpened()) {
+                door.condition = false;
+            }
+            else door.condition = true;
         }
     }
 }

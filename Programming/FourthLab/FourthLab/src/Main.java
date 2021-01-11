@@ -1,5 +1,3 @@
-import exceptions.NegativeAgeException;
-
 public class Main {
 
 /*
@@ -25,37 +23,21 @@ public class Main {
         // Создание объектов
 
         CarlssonImpl carlsson = new CarlssonImpl("Карлсон");
-        try {
-            carlsson.setAge(30);
-        } catch (NegativeAgeException e) {
-            System.out.println(e.getMessage());
-        }
+        carlsson.setAge(30);
 
         EricEricsonImpl ericEricson = new EricEricsonImpl("Малыш");
-        try {
-            ericEricson.setAge(7);
-        } catch (NegativeAgeException e) {
-            System.out.println(e.getMessage());
-        }
+        ericEricson.setAge(7);
 
         BetanEricsonImpl betanEricson = new BetanEricsonImpl(1);
-        try {
-            betanEricson.setAge(14);
-        } catch (NegativeAgeException e) {
-            System.out.println(e.getMessage());
-        }
+        betanEricson.setAge(14);
 
         MotherImpl mother = new MotherImpl(1);
-        try {
-            mother.setAge(37);
-        } catch (NegativeAgeException e) {
-            System.out.println(e.getMessage());
-        }
+        mother.setAge(37);
 
         TheyImpl they = new TheyImpl(2);
 
         Door door = new Door("дверь");
-        Door.Key key = new Door.Key("ключ");
+        Key key = new Key("ключ");
 
         Sound sound = new Sound("грохот") {
             @Override
@@ -78,7 +60,7 @@ public class Main {
         ericEricson.keepCalm();
         laughContainer.laughLoud("клокотал");
         System.out.print(": ");
-        carlsson.fallDown("прямо", new EricEricsonImpl("него"));
+        carlsson.fallDown("прямо на него");
         ericEricson.doNotUnderstand();
         System.out.println(". ");
 

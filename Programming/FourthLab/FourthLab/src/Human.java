@@ -1,30 +1,29 @@
 import java.util.Objects;
 import exceptions.NameLengthRuntimeException;
-import exceptions.NegativeAgeException;
+import exceptions.NegativeAgeRuntimeException;
 
 public abstract class Human {
-    private String Name;
-    private int Age;
+    private String name;
+    private int age;
 
     public void setName(String name) throws NameLengthRuntimeException {
         if (name.length() == 0)
             throw new NameLengthRuntimeException("Имя отсутствует", name);
-        else this.Name = name;
+        else this.name = name;
     }
 
-    public void setAge(int age) throws NegativeAgeException {
+    public void setAge(int age) throws NegativeAgeRuntimeException {
         if (age < 0)
-            throw new NegativeAgeException("Возраст не может быть отрицательным", age);
-        else
-            this.Age = age;
+            throw new NegativeAgeRuntimeException("Возраст не может быть отрицательным", age);
+        else this.age = age;
     }
 
     public String getName() {
-        return this.Name;
+        return this.name;
     }
 
     public int getAge() {
-        return this.Age;
+        return this.age;
     }
 
     @Override
@@ -32,43 +31,43 @@ public abstract class Human {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Human human = (Human) o;
-        return Age == human.Age &&
-                Objects.equals(Name, human.Name);
+        return age == human.age &&
+                Objects.equals(name, human.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Name, Age);
+        return Objects.hash(name, age);
     }
 
     @Override
     public String toString() {
         return "Human{" +
-                "Name='" + Name + '\'' +
-                ", Age=" + Age +
+                "Name='" + name + '\'' +
+                ", Age=" + age +
                 '}';
     }
 
     public class Legs {
         private String name;
         private Human human;
-        private EricEricsonImpl EricEricson;
-        private CarlssonImpl Carlsson;
+        private EricEricsonImpl ericEricson;
+        private CarlssonImpl carlsson;
 
         public Legs(String name, Human human) {
             this.name = name;
             this.human = human;
-            EricEricson = new EricEricsonImpl("его ");
-            Carlsson = new CarlssonImpl(" Карлсона");
+            ericEricson = new EricEricsonImpl("его ");
+            carlsson = new CarlssonImpl(" Карлсона");
             this.setName(name, human);
         }
 
         public void setName(String name, Human human) {
-            if (human.equals(EricEricson)) {
-                this.name = EricEricson.getName() + name;
+            if (human.equals(ericEricson)) {
+                this.name = ericEricson.getName() + name;
             }
-            else if (human.equals(Carlsson)) {
-                this.name = name + Carlsson.getName();
+            else if (human.equals(carlsson)) {
+                this.name = name + carlsson.getName();
             }
         }
         public String getName() {
@@ -80,8 +79,8 @@ public abstract class Human {
             return "Legs{" +
                     "name='" + name + '\'' +
                     ", human=" + human +
-                    ", EricEricson=" + EricEricson +
-                    ", Carlsson=" + Carlsson +
+                    ", EricEricson=" + ericEricson +
+                    ", Carlsson=" + carlsson +
                     '}';
         }
 
@@ -92,13 +91,13 @@ public abstract class Human {
             Legs legs = (Legs) o;
             return Objects.equals(name, legs.name) &&
                     Objects.equals(human, legs.human) &&
-                    Objects.equals(EricEricson, legs.EricEricson) &&
-                    Objects.equals(Carlsson, legs.Carlsson);
+                    Objects.equals(ericEricson, legs.ericEricson) &&
+                    Objects.equals(carlsson, legs.carlsson);
         }
 
         @Override
         public int hashCode() {
-            return Objects.hash(name, human, EricEricson, Carlsson);
+            return Objects.hash(name, human, ericEricson, carlsson);
         }
     }
 
