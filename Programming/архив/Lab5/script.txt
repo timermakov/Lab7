@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Elements>
+<LabWork>
+<id>145376</id>
+<name>Tim</name>
+<Coordinates>
+<x>5</x>
+<y>0.5</y>
+</Coordinates>
+<creationDate>2021-03-23T07:17:43.087350100+03:00[Europe/Moscow]</creationDate>
+<minimalPoint>99</minimalPoint>
+<averagePoint>100</averagePoint>
+<Difficulty>
+INSANE
+</Difficulty>
+<Person>
+<name>Tim</name>
+<birthday>2002-09-06T00:00Z</birthday>
+<height>182.0</height>
+<weight>51.0</weight>
+</Person>
+</LabWork>
+</Elements>

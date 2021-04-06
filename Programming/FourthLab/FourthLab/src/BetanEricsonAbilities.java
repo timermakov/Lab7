@@ -6,4 +6,5 @@ public interface BetanEricsonAbilities {
     void angry();
     void hear();
 
+
 }
