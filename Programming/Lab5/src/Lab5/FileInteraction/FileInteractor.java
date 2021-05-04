@@ -57,9 +57,9 @@ public class FileInteractor {
             BufferedReader reader = new BufferedReader(new FileReader(path));
             LinkedList<LabWork> elementsList = new LinkedList<>();
             String line = reader.readLine();
-            while((reader.readLine())!=null && line.length()!=0) {
+            while(line!=null && line.length()!=0) {
                 String[] data = CsvTools.getData(line);
-                elementsList.add(ClassesCreator.createLabWork(reader));
+                elementsList.add(ClassesCreator.createLabWork(data));
                 line = reader.readLine();
             }
             reader.close();
@@ -73,94 +73,15 @@ public class FileInteractor {
 
     /**
      * Сохраняет коллекцию в файл
-     * @param elements LinkedList из жлементов LabWork
-     * @throws IOException елси во время записи данных произойдет ошибка
+     * @param elements LinkedList из элементов LabWork
+     * @throws IOException если во время записи данных произойдет ошибка
      */
     public void writeData(LinkedList<LabWork> elements) throws IOException {
         PrintWriter writer = new PrintWriter(new FileWriter(path));
         for (Object element: elements){
-            writer.write(((Csv_Interchangeable)element).createCsv());
+            writer.println(((Csv_Interchangeable)element).createCsv());
         }
         writer.close();
     }
-/*
-    Work() throws IOException {
-        labwork = new LinkedList<>();
-        history = new LinkedList<>();
-        dataName = "labdata.csv";
-        base = new File(dataName);
 
-        System.out.println("Здравствуйте!");
-
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(dataName));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                int index = line.lastIndexOf(';');
-                if (index == -1) {
-                    System.err.println("Файл с данными пустой");
-                } else {
-                    data = line.split(";");
-
-                    labwork.add(new LabWork(id, name, new Coordinates(x,y), creationDate, minimalPoint, personalQualitiesMinimum, difficulty, new Person(nameAuthor, birthday, height, nationality)));
-                }
-            }
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        labwork.sort(new SortById());
-
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("history.csv"));
-            String line;
-            while ((line = reader.readLine()) != null) {
-                int index = line.lastIndexOf(';');
-                if (index == -1) {
-                    System.err.println("Файл с историей пустой");
-                } else {
-                    historyData = line.split(";");
-                    ZonedDateTime creationDate = ZonedDateTime.parse(historyData[0]);
-                    String whatAct = historyData[1];
-
-                    history.add(new History(creationDate, whatAct));
-                }
-            }
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        while(true){
-            takeComand();
-        }
-
-    }
-*/
-
-    /**
-     *
-     * @param myComand used to add it to history and save
-     */
-
-    /*
-    public void addToHistory(String myComand){
-        ZonedDateTime now = ZonedDateTime.now();
-        if (history.size() >= 12) {
-            history.removeLast();
-        }
-        history.addFirst(new History(now, myComand));
-
-        try(PrintWriter pw = new PrintWriter("history.csv"))
-        {
-            for(History h : history){
-
-                pw.println(h.getToWrite());
-            }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
-    */
 }

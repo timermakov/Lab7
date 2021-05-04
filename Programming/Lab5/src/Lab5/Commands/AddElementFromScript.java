@@ -1,7 +1,13 @@
 package Lab5.Commands;
 
+import Lab5.FileInteraction.ClassesCreator;
 import Lab5.Source.*;
 
+import java.io.IOException;
+import java.time.LocalDate;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
 
 /**
@@ -16,29 +22,53 @@ public class AddElementFromScript implements Executable {
     }
 
     @Override
-    public boolean execute(LinkedList<LabWork> list, String arg) {
+    public boolean execute(LinkedList<LabWork> list, String args) {
 
-        String[] args = arg.split(" ");
+        String[] data = args.split(" ");
+        for (int i = 0; i < data.length; i++) {
+            System.out.println(data[i]);
+        }
 
-        for (Difficulty dif : Difficulty.values())
-            if (dif.getName().toUpperCase().equals(args[6])) args[6] = dif.name();
-        Difficulty tempoDif;
-        if (args[6].equals("")) tempoDif = null;
-        else tempoDif = Difficulty.valueOf(args[6].toUpperCase());
+        LabWork labWork;
+        ClassesCreator classesCreator = new ClassesCreator();
 
-        if( (args[0].equals("")) || (Float.parseFloat(args[1]) > 226) || ( Integer.parseInt(args[2]) > 668) ||
-                ( Double.parseDouble(args[3]) < 0) || (args[7].equals("")) || (Long.parseLong(args[8]) < 0) ) return false;
+        String labName = data[0];
+        Coordinates coordinates = null;
+        try {
+            coordinates = classesCreator.createCoordinates(data[1], data[2]);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        if( !(args[5].equals("")) && (Double.parseDouble(args[5]) < 0) ) return false;
+        Long minimalPoint = Long.parseLong(data[3]);
+        Integer averagePoint = Integer.parseInt(data[4]);
+        Difficulty difficulty = null;
+        try {
+            difficulty = classesCreator.createDifficulty(data[5]);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        String authorName = data[6];
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        ZonedDateTime authorBirthday = LocalDate.parse(data[7], dtf).atStartOfDay(ZoneOffset.UTC);;
+        Float authorHeight = Float.parseFloat(data[8]);
+        Double authorWeight = Double.parseDouble(data[9]);
+        String authorPassportID = data[10];
+
+        Person author = new Person(authorName, authorBirthday, authorHeight, authorWeight, authorPassportID);
+        labWork = new LabWork(labName, coordinates, minimalPoint, averagePoint, difficulty, author);
+        list.add(labWork);
 
 
 /*
         list.add(new LabWork(args[0],
-                new Coordinates(Float.parseFloat(args[1]), Integer.parseInt(args[2])),
-                Double.parseDouble(args[3]),
-                Integer.parseInt(args[4]),
-                (args[5].equals(""))?null:Double.parseDouble(args[5]),
-                tempoDif,
+                new Coordinates(Integer.parseInt(args[1]), Double.parseDouble(args[2])),
+                ZonedDateTime.parse(args[3]),
+                Long.parseLong(args[4]),
+                Integer.parseInt(args[5]),
+                Double.parseDouble(args[6]),
+                new Difficulty(),
                 new Person(args[7], Long.parseLong(args[8]),
                         new Location(Float.parseFloat(args[9]),
                                 Integer.parseInt(args[10]),

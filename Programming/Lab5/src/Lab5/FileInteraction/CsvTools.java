@@ -25,7 +25,7 @@ public class CsvTools {
      * @return Строка csv формата
      */
     public static String createCsvLine(String ... data) {
-        String line = null;
+        String line = "";
         for (String el: data) {
             line = line + el + ";";
         }

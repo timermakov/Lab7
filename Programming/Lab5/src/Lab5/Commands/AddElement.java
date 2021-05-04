@@ -42,11 +42,18 @@ public class AddElement implements Executable {
 
         scanner = new Scanner(System.in);
 
+        String regexWord = "^\\w+$";
+        String regexPassport = "^\\d+$";
+
         for(;;) {
             System.out.print("Введите имя: ");
             line = scanner.nextLine();
             if (line.equals("")) {
                 System.out.println("Поле не может быть пустым");
+                continue;
+            }
+            if (!line.matches(regexWord)) {
+                System.out.println("Можно вводить только буквы латинского алфавита, цифры и подчёркивание");
                 continue;
             }
             labName = line;
@@ -167,6 +174,10 @@ public class AddElement implements Executable {
                 System.out.println("Поле не может быть пустым");
                 continue;
             }
+            if (!line.matches(regexWord)) {
+                System.out.println("Можно вводить только буквы латинского алфавита, цифры и подчёркивание");
+                continue;
+            }
             authorName = line;
             System.out.println("Имя автора: " + authorName);
             break;
@@ -239,6 +250,10 @@ public class AddElement implements Executable {
             line = scanner.nextLine();
             if (line.equals("")) {
                 System.out.println("Поле не может быть пустым");
+                continue;
+            }
+            if (!line.matches(regexPassport)) {
+                System.out.println("Можно вводить только цифры");
                 continue;
             }
             authorPassportID = line;

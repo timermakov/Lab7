@@ -23,11 +23,13 @@ public class CommandKeeper {
         standardCommands.add(new FilterGreaterThanAveragePoint());
         standardCommands.add(new Help());
         standardCommands.add(new Info());
-        standardCommands.add(new PrintDescending());
+        standardCommands.add(new PrintAscending());
         standardCommands.add(new RemoveById());
         standardCommands.add(new Save());
-        standardCommands.add(new Shuffle());
         standardCommands.add(new Update());
+        standardCommands.add(new RemoveFirst());
+        standardCommands.add(new RemoveHead());
+        standardCommands.add(new FilterStartsWithName());
 
         scriptCommands.add(new Show());
         scriptCommands.add(new AddElementFromScript());
@@ -38,13 +40,13 @@ public class CommandKeeper {
         scriptCommands.add(new FilterGreaterThanAveragePoint());
         scriptCommands.add(new Help());
         scriptCommands.add(new Info());
-        scriptCommands.add(new PrintDescending());
+        scriptCommands.add(new PrintAscending());
         scriptCommands.add(new RemoveById());
         scriptCommands.add(new Save());
-        scriptCommands.add(new Shuffle());
         scriptCommands.add(new UpdateFromScript());
-
-
+        scriptCommands.add(new RemoveFirst());
+        scriptCommands.add(new RemoveHead());
+        scriptCommands.add(new FilterStartsWithName());
     }
 
 
@@ -65,20 +67,20 @@ public class CommandKeeper {
             if (command.isDesired(commandName)){
                 try {
                     if (command.execute(list, arg)) {
-                        System.out.println("Команда " + commandName + " выполнена");
+                        System.out.println("Команда " + commandName + " выполнена \n");
                         return true;
                     } else {
-                        System.out.println("Команда " + commandName + " не исполнена");
+                        System.out.println("Команда " + commandName + " не исполнена \n");
                         return false;
                     }
                 }
                 catch (Exception e){
-                    System.out.println("Ошибка в выполнении программы");
+                    System.out.println("Ошибка в выполнении программы \n");
                     return false;
                 }
             }
         }
-        System.out.println("Команда не найдена");
+        System.out.println("Команда не найдена \n");
         return false;
     }
 

@@ -27,7 +27,7 @@ public class Coordinates implements Csv_Interchangeable {
 
     @Override
     public String toString() {
-        return String.format("Координаты:(%d; %f)", x, y);
+        return String.format("Координаты: (%d; %f)", x, y);
     }
 
 

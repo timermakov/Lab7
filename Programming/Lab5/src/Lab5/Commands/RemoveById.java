@@ -26,7 +26,7 @@ public class RemoveById implements Executable {
                 list.remove(i);
                 return true;
             }
-        System.out.println("Элемента с таким Id не найдено");
+        System.out.println("Элемента с таким id не найдено");
         return false;
     }
 }

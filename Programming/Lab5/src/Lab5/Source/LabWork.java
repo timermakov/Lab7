@@ -1,11 +1,8 @@
 package Lab5.Source;
 
 
-import Lab5.Comparators.SortDescending;
+import Lab5.Comparators.SortAscending;
 import Lab5.Comparators.Sortable;
-import Lab5.Exceptions.InvalidNumberException;
-import Lab5.Exceptions.NotPositiveNumberException;
-import Lab5.Exceptions.ValueIsEmptyException;
 import Lab5.FileInteraction.Csv_Interchangeable;
 import Lab5.FileInteraction.CsvTools;
 
@@ -22,7 +19,7 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
     private Difficulty difficulty; //Поле не может быть null
     private Person author; //Поле не может быть null
 
-    private Sortable sortBehavior = new SortDescending();
+    private Sortable sortBehavior = new SortAscending();
 
     public LabWork(){}
 
@@ -36,6 +33,7 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
                 || author == null)
             throw new IllegalArgumentException();
         id = (int)(Math.random() * 1000000);
+        this.id = id;
         this.name = name;
         this.coordinates = coordinates;
         this.creationDate = ZonedDateTime.now();
@@ -127,7 +125,7 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
 
     @Override
     public String toString() {
-        return "\n*****\nЛабораторная работа:\n\n" + "id: " + id + "\nНазвание: " + name + "\n" + coordinates +
+        return "*****\nЛабораторная работа\n" + "id: " + id + "\nНазвание: " + name + "\n" + coordinates +
                 "\nВремя создания: " + creationDate
                 + "\nПроходной балл: " + minimalPoint +
                 "\nСредний балл: " + averagePoint + "\n" + difficulty + "\n" + author + "\n*****";
@@ -137,7 +135,7 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
     @Override
     public String createCsv() {
         StringBuilder line = new StringBuilder("");
-        line.append(CsvTools.createCsvLine(String.valueOf(getId()), name,
+        line.append(CsvTools.createCsvLine(String.valueOf(this.id), name,
                 coordinates.getX().toString(), String.valueOf(coordinates.getY()), creationDate.toString(),
                 String.valueOf(minimalPoint), String.valueOf(averagePoint), difficulty.createCsv(),
                 author.name, author.birthday.toString(), String.valueOf(author.height),

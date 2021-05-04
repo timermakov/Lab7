@@ -22,7 +22,7 @@ public class Show implements Executable{
         }else {
             System.out.println("Элементы LinkedList представлены ниже: ");
 
-            for (int i = 0; i < list.size(); i++) System.out.println("\n\n№ " + i + "\n" + list.get(i));
+            for (int i = 0; i < list.size(); i++) System.out.println("\n№ " + (i+1) + "\n" + list.get(i));
         }
         return true;
     }

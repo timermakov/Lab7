@@ -1,1 +1,20 @@
-262166;Lab555;10;24.0;2021-04-06T12:52:25.664297300+03:00[Europe/Moscow];70;90;VERY_HARD;Imya;2000-01-01T00:00Z;178.0;70.0;4567 8934;
+help
+info
+show
+filter_starts_with_name Lab5
+filter_greater_than_average_point 70
+print_ascending
+add
+Lab140
+40
+20.0
+80
+90
+VERY_EASY
+Maria
+2002-05-01
+172.0
+68.0
+1234111123
+save
+exit
