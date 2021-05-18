@@ -1,10 +1,12 @@
 package Lab5.Source;
 
-import Lab5.FileInteraction.CsvTools;
-import Lab5.FileInteraction.CsvTools;
 import Lab5.FileInteraction.Csv_Interchangeable;
 
 import java.time.ZonedDateTime;
+
+/**
+ * Человек
+ */
 
 public class Person implements Csv_Interchangeable {
 

@@ -1,7 +1,7 @@
 package Lab5.Exceptions;
 
 /**
- * Возникает, если введённое значение пустое
+ * Возникает, если введённое число меньше или равно нулю
  */
 public class NotPositiveNumberException extends Exception{
     public NotPositiveNumberException() {

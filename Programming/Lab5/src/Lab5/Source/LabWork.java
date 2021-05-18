@@ -9,6 +9,10 @@ import Lab5.FileInteraction.CsvTools;
 
 import java.time.ZonedDateTime;
 
+/**
+ * Класс лабораторной работы
+ */
+
 public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
     private int id; //Значение поля должно быть больше 0, Значение этого поля должно быть уникальным, Значение этого поля должно генерироваться автоматически
     private String name; //Поле не может быть null, Строка не может быть пустой
@@ -131,7 +135,7 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
                 "\nСредний балл: " + averagePoint + "\n" + difficulty + "\n" + author + "\n*****";
     }
 
-    /**здесь заюзан StringBuilder*/
+    /**StringBuilder*/
     @Override
     public String createCsv() {
         StringBuilder line = new StringBuilder("");

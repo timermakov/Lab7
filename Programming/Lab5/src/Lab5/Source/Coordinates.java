@@ -2,8 +2,10 @@ package Lab5.Source;
 
 import Lab5.FileInteraction.CsvTools;
 import Lab5.FileInteraction.Csv_Interchangeable;
-import Lab5.FileInteraction.CsvTools;
-import Lab5.FileInteraction.Csv_Interchangeable;
+
+/**
+ * Координаты (x, y)
+ */
 
 public class Coordinates implements Csv_Interchangeable {
 

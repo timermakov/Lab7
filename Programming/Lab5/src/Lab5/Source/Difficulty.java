@@ -1,10 +1,9 @@
 package Lab5.Source;
 
-import Lab5.FileInteraction.CsvTools;
 import Lab5.FileInteraction.Csv_Interchangeable;
-import Lab5.FileInteraction.CsvTools;
-import Lab5.FileInteraction.Csv_Interchangeable;
-
+/**
+ * Enum, содержащий уровни сложности
+ */
 public enum Difficulty implements Csv_Interchangeable {
     VERY_EASY("Очень просто"),
     VERY_HARD("Очень сложно"),

@@ -1,16 +1,8 @@
 package Lab5.FileInteraction;
 
-import Lab5.Source.Coordinates;
-import Lab5.Source.Difficulty;
 import Lab5.Source.LabWork;
-import Lab5.Source.Person;
-
 import java.io.*;
-import java.time.LocalDate;
-import java.time.ZonedDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.LinkedList;
-import java.util.Locale;
 
 /**
  Класс отвечает за работу с файлом

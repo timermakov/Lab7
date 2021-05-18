@@ -1,7 +1,7 @@
 package Lab5.Exceptions;
 
 /**
- * Возникает, если введённое значение пустое
+ * Возникает, если число введено некорректно
  */
 public class InvalidNumberException extends Exception{
     public InvalidNumberException() {

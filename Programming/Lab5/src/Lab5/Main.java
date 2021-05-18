@@ -1,17 +1,18 @@
 package Lab5;
 
-import java.io.IOException;
-import java.util.NoSuchElementException;
+/**
+ * Класс, отвечающий за запуск и завершение программы
+ */
 
 public class Main {
 
     public static void main(String[] args) {
 
-        App app = null;
+        App app;
         try {
             byte[] b = new byte[1024];
             for (int r; (r = System.in.read(b)) != -1; ) {
-                String buffer = new String(b, 0, r);
+                //String buffer = new String(b, 0, r);
                 //System.out.println(buffer);
 
                 app = new App(args[0]);

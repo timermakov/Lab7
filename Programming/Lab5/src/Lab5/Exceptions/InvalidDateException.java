@@ -1,7 +1,7 @@
 package Lab5.Exceptions;
 
 /**
- * Возникает, если введённое значение пустое
+ * Возникает, если некорректно введена дата
  */
 public class InvalidDateException extends Exception{
     public InvalidDateException() {

@@ -5,7 +5,6 @@ import Lab5.FileInteraction.FileInteractor;
 import Lab5.Source.LabWork;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Scanner;
 

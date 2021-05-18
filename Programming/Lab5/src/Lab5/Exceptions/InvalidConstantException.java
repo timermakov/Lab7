@@ -1,7 +1,7 @@
 package Lab5.Exceptions;
 
 /**
- * Возникает, если введённое значение пустое
+ * Возникает, если некорректно введён уровень сложности
  */
 public class InvalidConstantException extends Exception{
     public InvalidConstantException() {
