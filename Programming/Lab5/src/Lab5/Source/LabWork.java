@@ -27,6 +27,15 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
 
     public LabWork(){}
 
+    /**
+     * Конструктор лабораторной работы без id и даты создания
+     * @param name Имя
+     * @param coordinates Координаты
+     * @param minimalPoint Минимальный балл
+     * @param averagePoint Средний балл
+     * @param difficulty Сложность
+     * @param author Автор
+     */
     public LabWork(String name, Coordinates coordinates, Long minimalPoint, int averagePoint,
                    Difficulty difficulty, Person author) {
         if (name == null || name.equals("")
@@ -47,6 +56,16 @@ public class LabWork implements Csv_Interchangeable, Comparable<LabWork>{
         this.author = author;
     }
 
+    /**
+     * @param id Уникальный номер лабораторной работы
+     * @param name Имя
+     * @param coordinates Координаты
+     * @param creationDate Дата создания
+     * @param minimalPoint Минимальный балл
+     * @param averagePoint Средний балл
+     * @param difficulty Сложность
+     * @param author Автор
+     */
     public LabWork(int id, String name, Coordinates coordinates, java.time.ZonedDateTime creationDate,
                    Long minimalPoint, int averagePoint,
                    Difficulty difficulty, Person author) {

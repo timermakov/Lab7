@@ -16,6 +16,14 @@ public class Person implements Csv_Interchangeable {
     double weight; //Значение поля должно быть больше 0
     String passportID; //Поле не может быть null
 
+    /**
+     * Конструктор объекта человек
+     * @param name Имя
+     * @param birthday Дата рождения
+     * @param height Рост
+     * @param weight Масса
+     * @param passportID Номер паспорта
+     */
     public Person(String name, java.time.ZonedDateTime birthday, float height, double weight, String passportID){
         if (name == null || name.equals("") || birthday == null || height <= 0 || weight <= 0 || passportID == null)
             throw new IllegalArgumentException();

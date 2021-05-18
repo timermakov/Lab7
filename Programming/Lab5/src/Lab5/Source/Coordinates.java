@@ -12,6 +12,11 @@ public class Coordinates implements Csv_Interchangeable {
     private Integer x; //Поле не может быть null
     private double y;
 
+    /**
+     * Конструктор объекта координат
+     * @param x Координата x
+     * @param y Координата y
+     */
     public Coordinates(Integer x, double y){
         if (x == null) throw new IllegalArgumentException();
         this.x = x;
