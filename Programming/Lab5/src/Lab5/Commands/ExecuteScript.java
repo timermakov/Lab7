@@ -12,7 +12,7 @@ import java.util.Objects;
 
 
 /**
- * Класс с методом, исполняющим комманды из файла
+ * Класс с методом, исполняющим команды из файла
  */
 public class ExecuteScript implements Executable {
 

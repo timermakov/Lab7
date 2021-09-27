@@ -19,7 +19,8 @@ public class Show implements Executable{
         if (list.isEmpty()){
             System.out.println("Коллекция пуста");
 
-        }else {
+        }
+        else {
             System.out.println("Элементы LinkedList представлены ниже: ");
 
             for (int i = 0; i < list.size(); i++) System.out.println("\n№ " + (i+1) + "\n" + list.get(i));

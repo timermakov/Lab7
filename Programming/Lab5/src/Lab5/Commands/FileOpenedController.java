@@ -37,7 +37,7 @@ public class FileOpenedController {
     /**
      * Проверяет, может ли execute_script открыть файл
      * @param name название файла
-     * @return true/false взависимости от того, может ли ececute_script открыть файл
+     * @return true/false в зависимости от того, может ли execute_script открыть файл
      */
     public static boolean canOpen(String name){
         boolean result = true;

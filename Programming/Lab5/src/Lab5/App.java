@@ -39,7 +39,7 @@ public class App {
     }
 
     /**
-     * Запускаает программу
+     * Запускает программу
      */
     public void start(){
         System.out.println("Вещественные числа вводить через точку (12.34) \nКоманды регистронечувствительны \nДля получения списка команд введите help");
@@ -48,7 +48,8 @@ public class App {
             String line = scanner.nextLine();
             if(!line.contains(" ")){
                 CommandKeeper.execute(line, elementsList, "", mode);
-            }else {
+            }
+            else {
                 CommandKeeper.execute(String.valueOf(line.toCharArray(), 0, line.indexOf(" ")), elementsList,
                         String.valueOf(line.toCharArray(), line.indexOf(" ") + 1,
                                 line.length() - line.indexOf(" ") - 1), mode);
