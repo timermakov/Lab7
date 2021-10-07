@@ -27,28 +27,31 @@ function fieldsEmpty() {
     return isEmpty;
 }
 
-function isValuesValid() {
-    let isOK = true
-    if (!isNaN(parseFloat(x.value)) && ![-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2].includes(parseFloat(x.value))) {
+function areValuesValid() {
+    let isOK = true;
+    x.style.borderBottom = "1px solid #ACACAC";
+    y.style.borderBottom = "1px solid #ACACAC";
+    r.style.borderBottom = "1px solid #ACACAC";
+
+    if (isNaN(parseFloat(x.value)) || ![-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2].includes(parseFloat(x.value))) {
         x.style.borderBottom = "1px solid red";
         $('#messageX').text("Некорректный ввод");
         isOK = false;
     }
-    if (y.value > 3 || y.value < -5 || isNaN(y.value)){
+    if (y.value.trim() === '' || y.value > 3 || y.value < -5){
         y.style.borderBottom = "1px solid red";
         $('#messageY').text("Некорректный ввод");
         isOK = false;
     }
-    if (r.value > 4 || r.value < 1 || isNaN(r.value)){
+    if (r.value.trim() === '' || r.value > 4 || r.value < 1){
         r.style.borderBottom = "1px solid red";
         $('#messageR').text("Некорректный ввод");
         isOK = false;
     }
-    else {
-        y.style.borderBottom = "1px solid #ACACAC";
-    }
+
     return isOK;
 }
+
 
 $(document).ready(function () {
     $('[data-reset]').on('click', function (e) {
@@ -83,7 +86,7 @@ $(document).ready(function() {
           e.preventDefault();
           let isOkFields = !fieldsEmpty();
           if (!isOkFields) return;
-          let isOkValues = isValuesValid();
+          let isOkValues = areValuesValid();
           if (isOkFields && isOkValues) {
               $.ajax({
               url: "save.php",
