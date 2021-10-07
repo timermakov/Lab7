@@ -14,13 +14,19 @@ $class = "No";
 $int_value = is_numeric($r) ? floatval($r) : null;
 if ($int_value === null)
 {
-// $value wasn't all numeric
+  $message = "Invalid R";
+}
+
+$int_value = is_numeric($x) ? floatval($x) : null;
+if ($int_value === null)
+{
+  $message = "Invalid X";
 }
 
 $int_value = is_numeric($y) ? floatval($y) : null;
 if ($int_value === null)
 {
-// $value wasn't all numeric
+  $message = "Invalid Y";
 }
 
 if ((($x <= 0 && $y <= 0 && ($x*$x+$y*$y) <= $r*$r)) ||
