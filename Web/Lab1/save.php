@@ -3,9 +3,9 @@
 session_start();
 $start = microtime(true); // Время начала исполнения скрипта
 $validX = array(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2);
-$r = floatval(htmlspecialchars($_GET["r"]));
-$x = floatval(htmlspecialchars($_GET["x"]));
-$y = floatval(htmlspecialchars($_GET["y"]));
+$r = floatval(htmlspecialchars($_POST["r"]));
+$x = floatval(htmlspecialchars($_POST["x"]));
+$y = floatval(htmlspecialchars($_POST["y"]));
 date_default_timezone_set("Europe/Moscow");
 $current_time = date("H:i:s");
 $message = "";
@@ -24,7 +24,7 @@ if ($int_value === null)
 }
 
 if ((($x <= 0 && $y <= 0 && ($x*$x+$y*$y) <= $r*$r)) ||
-     ($x >= 0 && $y >= 0 && ($x + $y <= $r/2)) ||
+     ($x >= 0 && $y >= 0 && ($y <= -$x/2 + $r/2)) ||
      ($x <= 0 && $y >= 0 && $x >= -$r && $y <= $r/2)) {
   $message = "Yes";
   $class = "Yes";
@@ -47,9 +47,7 @@ if (!is_null($r) && !is_null($x) && !is_null($y)) {
     }
   }
 
-
-
-  $time = strval(number_format(microtime(true) - $start, 10, ".", "")*1000) . 'ms';
+  $time = strval(number_format(microtime(true) - $start, 9, ".", "")*1000) . ' ms';
 
   // Сохранение в сессию
   $result = array($x, $y, $r, $message, $time, $current_time);

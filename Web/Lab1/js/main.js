@@ -29,14 +29,6 @@ function fieldsEmpty() {
 
 function isValuesValid() {
     let isOK = true
-    if (r.value > 4 || r.value < 1 || isNaN(r.value)){
-        r.style.borderBottom = "1px solid red";
-        $('#messageR').text("Некорректный ввод");
-        isOK = false;
-    } else {
-        r.style.borderBottom = "1px solid #ACACAC";
-    }
-
     if (!isNaN(parseFloat(x.value)) && ![-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2].includes(parseFloat(x.value))) {
         x.style.borderBottom = "1px solid red";
         $('#messageX').text("Некорректный ввод");
@@ -46,7 +38,13 @@ function isValuesValid() {
         y.style.borderBottom = "1px solid red";
         $('#messageY').text("Некорректный ввод");
         isOK = false;
-    } else {
+    }
+    if (r.value > 4 || r.value < 1 || isNaN(r.value)){
+        r.style.borderBottom = "1px solid red";
+        $('#messageR').text("Некорректный ввод");
+        isOK = false;
+    }
+    else {
         y.style.borderBottom = "1px solid #ACACAC";
     }
     return isOK;
@@ -59,7 +57,7 @@ $(document).ready(function () {
         $.ajax({
             url: "reset.php",
             async: true,
-            type: "GET",
+            type: "POST",
             data: {},
             cache: false,
             success: function(response) {
@@ -75,7 +73,6 @@ $(document).ready(function () {
                 `
             },
             error: function(xhr) {
-
             }
         });
     })
@@ -91,7 +88,7 @@ $(document).ready(function() {
               $.ajax({
               url: "save.php",
               async: true,
-              type: "GET",
+              type: "POST",
               data: {
                   "x": x.value,
                   "y": y.value,
@@ -130,7 +127,7 @@ $(document).ready(function () {
     $.ajax({
         url: "restore.php",
         async: true,
-        type: "GET",
+        type: "POST",
         success: function (response){
             let table = document.getElementById("tbody");
             table.insertAdjacentHTML('beforeend', response);
