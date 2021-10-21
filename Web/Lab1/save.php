@@ -3,68 +3,62 @@
 session_start();
 $start = microtime(true); // Время начала исполнения скрипта
 $validX = array(-2, -1.5, -1, -0.5, 0, 0.5, 1, 1.5, 2);
-$r = floatval(htmlspecialchars($_POST["r"]));
-$x = floatval(htmlspecialchars($_POST["x"]));
-$y = floatval(htmlspecialchars($_POST["y"]));
+$r = htmlspecialchars($_POST["r"]);
+$x = htmlspecialchars($_POST["x"]);
+$y = htmlspecialchars($_POST["y"]);
+if (is_numeric($r)) $int_value_r = floatval($r); else $int_value_r = null;
+if (is_numeric($x)) $int_value_x = floatval($x); else $int_value_x = null;
+if (is_numeric($y)) $int_value_y = floatval($y); else $int_value_y = null;
+//$int_value_r = is_numeric($r) ? floatval($r) : null;
+//$int_value_x = is_numeric($x) ? floatval($x) : null;
+//$int_value_y = is_numeric($y) ? floatval($y) : null;
 date_default_timezone_set("Europe/Moscow");
 $current_time = date("H:i:s");
 $message = "";
 $class = "No";
 
-$int_value = is_numeric($r) ? floatval($r) : null;
-if ($int_value === null)
+if ($int_value_r == 0 && $int_value_x == 0 && $int_value_y == 0) {
+  $message = "Insert data";
+  $class = "Insert data";
+}
+else
+if ($int_value_r === null || $int_value_r > 4 || $int_value_r < 1)
 {
   $message = "Invalid R";
+  $class = "Invalid R";
 }
-
-$int_value = is_numeric($x) ? floatval($x) : null;
-if ($int_value === null)
+else
+if ($int_value_x === null || !in_array($x, $validX))
 {
   $message = "Invalid X";
+  $class = "Invalid X";
 }
-
-$int_value = is_numeric($y) ? floatval($y) : null;
-if ($int_value === null)
+else
+if ($int_value_y === null || $int_value_y > 3 || $int_value_y < -5)
 {
   $message = "Invalid Y";
+  $class = "Invalid Y";
 }
-
-if ((($x <= 0 && $y <= 0 && ($x*$x+$y*$y) <= $r*$r)) ||
-     ($x >= 0 && $y >= 0 && ($y <= -$x/2 + $r/2)) ||
-     ($x <= 0 && $y >= 0 && $x >= -$r && $y <= $r/2)) {
+else
+if ((($int_value_x <= 0 && $int_value_y <= 0 && ($int_value_x * $int_value_x + $int_value_y * $int_value_y) <= $int_value_r * $int_value_r)) ||
+     ($int_value_x >= 0 && $int_value_y >= 0 && ($int_value_y <= - $int_value_x / 2 + $int_value_r / 2)) ||
+     ($int_value_x <= 0 && $int_value_y >= 0 && $int_value_x >= -$int_value_r && $int_value_y <= $int_value_r / 2)) {
   $message = "Yes";
   $class = "Yes";
 } else {
   $message = "No";
 }
 
-if (!is_null($r) && !is_null($x) && !is_null($y)) {
-  if ($r == 0 && $x == 0 && $y == 0) {
-    $message = "Insert Data";
-  } else {
-    if ($r > 4 || $r < 1) {
-      $message = "Invalid R";
-    }
-    if (!in_array($x, $validX)) {
-      $message = "Invalid X";
-    }
-    if ($y > 3 || $y < -5) {
-      $message = "Invalid Y";
-    }
-  }
+$time = strval(number_format(microtime(true) - $start, 9, ".", "")*1000) . ' ms';
 
-  $time = strval(number_format(microtime(true) - $start, 9, ".", "")*1000) . ' ms';
-
-  // Сохранение в сессию
-  $result = array($x, $y, $r, $message, $time, $current_time);
-  if (!isset($_SESSION['results'])) {
-    $_SESSION['results'] = array();
-  }
-  array_push($_SESSION['results'], $result);
-
-  // Печать в таблицу
-  print_r('<tr><td>'.$x.'</td><td>'.$y.'</td><td>'.$r.'</td><td class="'.$class.'">'.$message.'</td><td>'.$time.'</td><td>'.$current_time.'</td></tr>');
-
+// Сохранение в сессию
+$result = array($int_value_x, $int_value_y, $int_value_r, $message, $time, $current_time);
+if (!isset($_SESSION['results'])) {
+  $_SESSION['results'] = array();
 }
+array_push($_SESSION['results'], $result);
+
+// Печать в таблицу
+print_r('<tr><td>'.$int_value_x.'</td><td>'.$int_value_y.'</td><td>'.$int_value_r.'</td><td class="'.$class.'">'.$message.'</td><td>'.$time.'</td><td>'.$current_time.'</td></tr>');
 
 ?>

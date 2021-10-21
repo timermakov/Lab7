@@ -38,12 +38,12 @@ function areValuesValid() {
         $('#messageX').text("Некорректный ввод");
         isOK = false;
     }
-    if (y.value.trim() === '' || y.value > 3 || y.value < -5){
+    if (isNaN(parseFloat(y.value)) || y.value.trim() === '' || y.value > 3 || y.value < -5){
         y.style.borderBottom = "1px solid red";
         $('#messageY').text("Некорректный ввод");
         isOK = false;
     }
-    if (r.value.trim() === '' || r.value > 4 || r.value < 1){
+    if (isNaN(parseFloat(r.value)) || r.value.trim() === '' || r.value > 4 || r.value < 1){
         r.style.borderBottom = "1px solid red";
         $('#messageR').text("Некорректный ввод");
         isOK = false;
@@ -85,7 +85,7 @@ $(document).ready(function() {
     $('[data-submit]').on('click', function(e) {
           e.preventDefault();
           let isOkFields = !fieldsEmpty();
-          if (!isOkFields) return;
+          //if (!isOkFields) return;
           let isOkValues = areValuesValid();
           if (isOkFields && isOkValues) {
               $.ajax({
