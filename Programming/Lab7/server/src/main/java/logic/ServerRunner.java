@@ -45,6 +45,7 @@ public class ServerRunner {
                     SelectorManager.run();
                 } catch (SocketException e) {
                     logger.error("Check my SOCKET!");
+                    e.printStackTrace();
                     System.err.println("Check my SOCKET!");
                 } catch (ClosedChannelException e) {
                     logger.error("Check my CHANNEL! It is closed...");
